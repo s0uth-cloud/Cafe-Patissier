@@ -7,6 +7,59 @@ body {
 }
 
 /*Mobile View*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480vw) {
+    .navigation-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        background-color: #99582a;
+        width: 100vw;
+        height: 10vh;
+        z-index: 9999;
+        padding: 2px 0px;
+    }
+
+    .navigation > a {
+        width: 70vw;
+        color: #ffe6a7;
+        text-decoration: none;
+        padding: 0rem 0.5vw;
+        font: 600 1rem "Crimson Text", serif;
+    }
     
+    #logo-button {
+        position: relative;
+        left: 1%;
+        width: 45px;
+        height: 45px;
+        background-color: #ddb892;
+        border-radius: 50%;
+    }
+
+    #shopping-cart {
+        color: #ffe6a7;
+    }
+    
+    #user-profile {
+        float: right;
+        width: 45px;
+        height: 45px;
+        border: 2px solid #ffe6a7;
+        border-radius: 50%;
+    }
+    
+    .page-section {
+        display: block;
+        background-color: #ffe6a7;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    footer {
+        display: block;
+        background-color: #99582a;
+        width: 100vw;
+        height: 30vh;
+    }
 }
