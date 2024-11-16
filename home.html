@@ -5,59 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Café Pâtissier | Home</title>
     <link rel="stylesheet" href="style.css">
+    <!--Add javascript for sidepanel-->
 </head>
 <body>
     <header class="navigation-bar">
-        <nav class="navigation-buttons">
+        <a href="#top"><img src="assets/logo.webp" alt="Café Pâtissier Logo" id="logo-button"></a>
+        <nav class="navigation">
             <a href="#top">Home</a>
             <a href="#products">Products</a>
             <a href="#reviews">Reviews</a>
-            <a href="#about">About</a>
+            <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </nav>
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
     </header>
     <main>
-        <section class="container" id="top">
+        <section class="page-section" id="top">
             <div class="top-content">
-                <img src="cafe_logo.webp" alt="Café Pâtissier Logo" id="logo">
+                <img src="assets/logo.webp" alt="Café Pâtissier Logo" id="home-logo">
                 <h1 class="title">Café Pâtissier</h1>
                 <h3 class="subtitle">Coffee & Pastries</h3>
                 <button id="shop-button">Open Shop</button>
             </div>
         </section>
 
-        <section class="container" id="products">
+        <section class="page-section" id="products">
             <div class="product-content">
                 <h1 class="section-title">Products</h1>
                 <p class="description">Pair your favorite brew with one of our freshly baked pastries, made in-house daily. From buttery croissants and soft muffins to decadent cakes and cookies, every bite promises indulgence and comfort.</p>
-                <div class="product-container">
+                <div class="products-container">
                     <div class="product-card" id="coffee">
-                        <img src="assets/coffee.webp" alt="Coffee" class="product-image">
+                        <img src="assets/images/coffee.webp" alt="Coffee" class="product-image">
                         <h2 class="product-name">Coffee</h2>
                     </div>
                     <div class="product-card" id="pastry">
-                        <img src="assets/pastry.webp" alt="Pastry" class="product-image">
+                        <img src="assets/images/pastry.webp" alt="Pastry" class="product-image">
                         <h2 class="product--name">Pastry</h2>
                     </div>
                     <div class="product-card" id="cake">
-                        <img src="assets/cake.webp" alt="Cake" class="product-image">
+                        <img src="assets/images/cake.webp" alt="Cake" class="product-image">
                         <h2 class="product-name">Cake</h2>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="container" id="reviews">
+        <section class="page-section" id="reviews">
             <div class="review-content">
                 <h1 class="section-title">Reviews</h1>
+                <div class="reviews-container">
+                    <div class="review-card">
+                        <h3 class="name">E*** C*******</h3>
+                        <h5 class="review-title">"Cozy and inviting!"</h5>
+                        <p class="review">Café Pâtissier is my favorite spot for a great cup of coffee and a buttery croissant. The atmosphere is perfect for relaxing or getting work done. The staff are always so friendly—highly recommend!</p>
+                    </div>
+                    <div class="review-card">
+                        <h3 class="name">L**** F******</h3>
+                        <h5 class="review-title">"Best coffee in town!"</h5>
+                        <p class="review">As a coffee lover, I'm impressed by the quality here. The espresso is smooth, and the almond croissant is to die for. Great place for coffee and fresh pastries!</p>
+                    </div>
+                    <div class="review-card">
+                        <h3 class="name">S***** B******</h3>
+                        <h5 class="review-title">"A true gem!"</h5>
+                        <p class="review">I stumbled upon Café Pâtissier, and it's now a favorite! The blueberry scone was amazing, and the coffee was rich and flavorful. A must-visit for anyone who loves a cozy café.</p>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section class="container" id="about">
-            
         </section>
     </main>
     <footer>
-
+        <img src="assets/logo.webp" alt="Café Pâtissier Logo" id="logo-footer">
+        <div class="social-media">
+            <h4 class="footer-section-title">Follow Us</h4>
+            <ul>
+                <li><a href="facebook.com">Facebook</a></li>
+                <li><a href="x.com">Twitter / X</a></li>
+                <li><a href="instagram.com">Instagram</a></li>
+                <li><a href="tiktok.com">TikTok</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h4 class="footer-section-title">Contact Us</h4>
+            <ul>
+                <li class="contact-info">Phone No.: 0912-345-6789</li>
+                <li class="contact-info">Address: #21 Poblacion 3, Gerona, Tarlac</li>
+            </ul>
+        </div>
+        <p class="copyright">&copy;2024 Café Pâtissier. All rights reserved.</p>
     </footer>
 </body>
 </html>
