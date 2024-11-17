@@ -11,26 +11,68 @@ body {
     .navigation-bar {
         display: flex;
         align-items: center;
-        justify-content: center;
         position: fixed;
         background-color: #99582a;
         width: 100vw;
         height: 10vh;
+        z-index: 999;
+        padding: 0;
+    }
+
+    .navigation {
+        width: 0;
+        height: 100vh;
+        position: fixed;
         z-index: 9999;
-        padding: 2px 0px;
+        top: 0;
+        right: 0;
+        background-color: #99582a;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
     }
 
     .navigation > a {
+        display: block;
         width: 70vw;
         color: #ffe6a7;
         text-decoration: none;
-        padding: 0rem 0.5vw;
+        padding: 8px 8px 32px 8px;
         font: 600 1rem "Crimson Text", serif;
+        transition: 0.3s;
     }
+
+    .navigation > a:hover {
+        color: #ffedd8;
+    }
+
+    .navigation > .close-button {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .open-button {
+        position: absolute;
+        right: 0px;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #432818;
+        color: #ffe6a7;
+        padding: 10px 15px;
+        margin: 0;
+        border: none;
+      }
+      
+      .open-button:hover {
+        background-color: #ddb892;
+      }
     
     #logo-button {
         position: relative;
-        left: 1%;
+        left: 1vw;
         width: 45px;
         height: 45px;
         background-color: #ddb892;
@@ -38,11 +80,17 @@ body {
     }
 
     #shopping-cart {
+        position: absolute;
+        top: 20px;
+        right: 120px;
         color: #ffe6a7;
+        margin: 0;
     }
     
     #user-profile {
-        float: right;
+        position: absolute;
+        top: 3px;
+        right: 55px;
         width: 45px;
         height: 45px;
         border: 2px solid #ffe6a7;
@@ -53,7 +101,7 @@ body {
         display: block;
         background-color: #ffe6a7;
         width: 100vw;
-        height: 100vh;
+        height: 60vh;
     }
     
     footer {
@@ -61,5 +109,131 @@ body {
         background-color: #99582a;
         width: 100vw;
         height: 30vh;
+    }
+
+    /*Top Section*/
+    #top {
+        background: url(assets/images/cafe_bg.webp) no-repeat;
+        background-size: 100vh;
+    }
+
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 250px;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.8px);
+        border: 1px solid rgba(255, 255, 255, 0.48);
+        position: relative;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+    }
+
+    #home-logo {
+        width: 150px;
+        height: 125px;
+        object-fit: cover;
+    }
+
+    .title {
+        font: 2.5rem "Pacifico", Cursive;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: -30px;
+    }
+
+    .subtitle {
+        font: 600 1.25rem "Playfair Display", sans-serif;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: -35px;
+    }
+
+    .shop-button {
+        width: 175px;
+        height: 50px;
+        border-radius: 20px;
+        color: #f2f4f3;
+        background-color: #0a0908;
+        font: 600 0.9rem "Crimson Text", serif;
+        padding: 10px;
+        position: relative;
+        top: -15px;
+    }
+
+    /*Products Section*/
+    #products {
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    .product-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 19rem;
+    }
+
+    .section-title {
+        font: bold 2rem "Crimson Text", serif;
+        margin: 0%;
+        color: #432818;
+    }
+    
+    .description {
+        font: 600 1rem "Crimson Text", serif;
+        color: #432818;
+        padding: 1% 0%;
+        margin: 0%;
+        text-align: center;
+    }
+
+    .product-container {
+        display: flex;
+        width: 100vw;
+        height: 150px;
+        gap: 10vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-card {
+        display: inline-block;
+        width: 120px;
+        height: 175px;
+        background-color: #f2f4f3;
+        color: #432818;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        margin: 0 10px;
+    }
+    
+    .product-image {
+        width: 100px;
+        height: 100px;
+        border: 2px solid #432818;
+        border-radius: 10px;
+        position: relative;
+        top: 3%;
+    }
+
+    .product-name  {
+        font: bold 1.5rem "Crimson Text", serif;
+        padding: 0;
+    }
+
+    #reviews {
+        background-color: lightgray;
     }
 }
