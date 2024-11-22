@@ -59,7 +59,7 @@ body {
     }
 
     .open-button {
-        position: absolute;
+        position: relative;
         right: 0px;
         font-size: 20px;
         cursor: pointer;
@@ -84,10 +84,19 @@ body {
         border-radius: 50%;
     }
 
-    #shopping-cart {
+    .menu-container {
+        display: flex;
         position: absolute;
+        right: 0;
+        width: auto;
+        height: 50px;
+        gap: 5px;
+    }
+
+    #shopping-cart {
+        position: relative;
         top: 20px;
-        right: 120px;
+        right: 10px;
         color: #ffe6a7;
         margin: 0;
         transition: 0.3s;
@@ -96,8 +105,45 @@ body {
     #shopping-cart:hover {
         color: #432818;
     }
+
+    #signIn-button {
+        position: relative;
+        top: 8px;
+        width: 90px;
+        height: 30px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        background-color: #ffe6a7;
+        color: #432818;
+        font: bold 0.8rem "Crimson Text", serif;
+        transition: 0.3s;
+    }
+
+    #signIn-button:hover {
+        background-color: #432818;
+        color: #ffe6a7;
+    }
+
+    #signUp-button {
+        position: relative;
+        top: 8px;
+        width: 90px;
+        height: 30px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        background-color: #ffe6a7;
+        color: #432818;
+        font: bold 0.8rem "Crimson Text", serif;
+        transition: 0.3s;
+    }
+
+    #signUp-button:hover {
+        background-color: #432818;
+        color: #ffe6a7;
+    }
     
     #user-profile {
+        display: none;
         position: absolute;
         top: 3px;
         right: 55px;
@@ -113,15 +159,18 @@ body {
     }
     
     .page-section {
-        display: block;
+        display: flex;
         background-color: #ffe6a7;
         width: 100vw;
-        height: 325px;
+        height: auto;
+        padding: 20px 0;
+        align-items: center;
+        justify-content: center;
     }
 
     /*Top Section*/
     #top {
-        background: url(assets/images/cafe_bg.webp) no-repeat;
+        background: url(assets/images/cafe_bg.webp) no-repeat center;
         background-size: 100vh;
     }
 
@@ -130,23 +179,21 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 300px;
-        height: 250px;
+        width: 70vw;
+        height:50vh;
         background: rgba(255, 255, 255, 0.3);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(2.8px);
         border: 1px solid rgba(255, 255, 255, 0.48);
         position: relative;
-        top: 58%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 10px;
+        top: 25px;
+        margin: 10px;
     }
 
     #home-logo {
-        width: 150px;
-        height: 125px;
+        width: 35vw;
+        height: 30vw;
         object-fit: cover;
     }
 
@@ -176,6 +223,7 @@ body {
         padding: 10px;
         position: relative;
         top: -15px;
+        transition: 0.3s;
     }
 
     .shop-button:hover {
@@ -194,28 +242,28 @@ body {
         align-items: center;
         justify-content: center;
         width: 100vw;
-        height: 19rem;
+        height: auto;
+        margin: 10px 0;
     }
 
     .section-title {
         font: bold 2rem "Crimson Text", serif;
-        margin: 0%;
+        margin: 0;
         color: #432818;
     }
     
     .description {
-        font: 600 0.9rem "Crimson Text", serif;
+        font: 600 3.5vw "Crimson Text", serif;
         color: #432818;
-        padding: 1% 0%;
-        margin: 0%;
+        padding: 5px 0;
+        margin: 0;
         text-align: center;
     }
 
     .product-container {
         display: flex;
         width: 100vw;
-        height: 150px;
-        gap: 10vw;
+        height: auto;
         align-items: center;
         justify-content: center;
         flex-wrap: nowrap;
@@ -223,8 +271,8 @@ body {
 
     .product-card {
         display: inline-block;
-        width: 120px;
-        height: 175px;
+        width: 30vw;
+        height: 45vw;
         background-color: #f2f4f3;
         color: #432818;
         border-radius: 10px;
@@ -234,16 +282,15 @@ body {
     }
     
     .product-image {
-        width: 100px;
-        height: 100px;
+        width: 25vw;
+        height: 25vw;
         border: 2px solid #432818;
         border-radius: 10px;
-        position: relative;
-        top: 3%;
+        margin: 7px 0 0 0;
     }
 
     .product-name  {
-        font: bold 1.5rem "Crimson Text", serif;
+        font: bold 6vw"Crimson Text", serif;
         padding: 0;
     }
 
@@ -252,31 +299,32 @@ body {
         position: relative;
         z-index: -1;
         background-color: lightgray;
-        height: 200vh;
+        height: auto;
     }
 
     .review-content {
         display: flex;
         flex-direction: column;
         width: 100vw;
-        height: 1050px;
+        height: auto;
         justify-content: center;
         align-items: center;
     }
 
     .reviews-container {
         display: flex;
-        width: 100vw;
-        height: 900px;
+        width: auto;
+        height: auto;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         gap: 20px;
+        margin: 20px 0;
     }
 
     .review-card {
-        width: 250px;
-        height: 275px;
+        width: 60vw;
+        height: 70vw;
         background-color: #f2f4f3;
         border: 2px solid #432818;
         border-radius: 10px;
@@ -287,7 +335,7 @@ body {
     }
 
     .customer-name {
-        font: bold 1.5rem "Crimson Text", serif;
+        font: bold 6vw "Crimson Text", serif;
         color: #432818;
         word-spacing: 5px;
         padding: 10px 0 0 0;
@@ -298,17 +346,18 @@ body {
         color: #FFD43B;
         padding: 0 0 10px 0;
         margin: 0;
+        font-size: 4vw;
     }
 
     .review-title {
-        font: bold 1rem "Crimson Text", serif;
+        font: bold 4vw "Crimson Text", serif;
         color: #432818;
         padding: 0;
         margin: 0;
     }
 
     .review {
-        font: 1rem "Crimson Text", serif;
+        font: 3.5vw "Crimson Text", serif;
         color: #432818;
         padding: 0 10px;
     }
@@ -327,8 +376,8 @@ body {
 
     .logo-group {
         display: flex;
-        width: 200px;
-        height: 100px;
+        width: auto;
+        height: auto;
         align-items: center;
         justify-content: center;
     }
@@ -368,6 +417,7 @@ body {
     .social-media-links > a {
         color: #ddb892;
         padding: 0 10px;
+        font-size: 1.25rem;
     }
 
     .copyright {
@@ -376,7 +426,7 @@ body {
     }
 }
 
-/*Larger Displays*/
+/*Desktop View*/
 @media screen and (min-width: 481px) {
     .navigation-bar {
         display: flex;
@@ -387,7 +437,6 @@ body {
         height: 50px;
         z-index: 999;
         padding: 0;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     }
 
     .navigation {
@@ -430,7 +479,7 @@ body {
     }
 
     .open-button {
-        position: absolute;
+        position: relative;
         right: 0px;
         font-size: 20px;
         cursor: pointer;
@@ -440,15 +489,14 @@ body {
         margin: 0;
         border: none;
         transition: 0.3s;
-    }
+      }
       
-    .open-button:hover {
+      .open-button:hover {
         background-color: #432818;
-    }
+      }
     
     #logo-button {
         position: relative;
-        top: 3px;
         left: 3px;
         width: 40px;
         height: 40px;
@@ -456,20 +504,64 @@ body {
         border-radius: 50%;
     }
 
-    #shopping-cart {
+    .menu-container {
+        display: flex;
         position: absolute;
-        top: 20px;
-        right: 120px;
+        right: 0;
+        width: auto;
+        height: 50px;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #shopping-cart {
         color: #ffe6a7;
         margin: 0;
         transition: 0.3s;
+        margin: 0 10px;
     }
 
     #shopping-cart:hover {
         color: #432818;
     }
+
+    #signIn-button {
+        width: 90px;
+        height: 30px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        background-color: #ffe6a7;
+        color: #432818;
+        font: bold 0.8rem "Crimson Text", serif;
+        transition: 0.3s;
+    }
+
+    #signIn-button:hover {
+        cursor: pointer;
+        background-color: #432818;
+        color: #ffe6a7;
+    }
+
+    #signUp-button {
+        width: 90px;
+        height: 30px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        background-color: #ffe6a7;
+        color: #432818;
+        font: bold 0.8rem "Crimson Text", serif;
+        transition: 0.3s;
+    }
+
+    #signUp-button:hover {
+        cursor: pointer;
+        background-color: #432818;
+        color: #ffe6a7;
+    }
     
     #user-profile {
+        display: none;
         position: absolute;
         top: 3px;
         right: 55px;
@@ -481,20 +573,24 @@ body {
     }
 
     #user-profile:hover {
+        cursor: pointer;
         border: 2px solid #432818;
     }
     
     .page-section {
-        display: block;
+        display: flex;
         background-color: #ffe6a7;
         width: 100vw;
-        height: 100vh;
+        height: auto;
+        padding: 20px 0;
+        align-items: center;
+        justify-content: center;
     }
 
     /*Top Section*/
     #top {
-        background: url(assets/images/cafe_bg.webp) no-repeat;
-        background-size: 100%;
+        background: url(assets/images/cafe_bg.webp) no-repeat center;
+        background-size: 100vw;
     }
 
     .top-content {
@@ -502,24 +598,23 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 500px;
-        height: 400px;
+        width: 50vw;
+        height:80vh;
         background: rgba(255, 255, 255, 0.3);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(2.8px);
         border: 1px solid rgba(255, 255, 255, 0.48);
         position: relative;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 10px;
+        top: 25px;
+        margin: 20px;
     }
 
     #home-logo {
-        width: 250px;
-        height: 200px;
+        width: 45vh;
+        height: 40vh;
         object-fit: cover;
+        margin: 0;
     }
 
     .title {
@@ -527,33 +622,31 @@ body {
         margin: 0;
         padding: 0;
         position: relative;
-        top: -30px;
+        top: -50px;
     }
 
     .subtitle {
-        font: 600 1.5rem "Playfair Display", sans-serif;
+        font: 600 2rem "Playfair Display", sans-serif;
         margin: 0;
         padding: 0;
         position: relative;
-        top: -35px;
+        top: -60px;
     }
 
     .shop-button {
-        width: 200px;
+        width: 175px;
         height: 50px;
-        border-radius:999px;
+        border-radius: 50px;
         color: #f2f4f3;
         background-color: #0a0908;
         font: 600 1rem "Crimson Text", serif;
-        padding: 5px;
+        padding: 10px;
         position: relative;
-        top: -15px;
-        border-style: none;
+        top: -45px;
         transition: 0.3s;
     }
 
     .shop-button:hover {
-        cursor: pointer;
         background-color: #f2f4f3;
         color: #0a0908;
     }
@@ -568,33 +661,29 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 90vw;
-        height: 90rem;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        width: 100vw;
+        height: auto;
+        margin: 10px 0;
     }
 
     .section-title {
-        font: bold 5vw "Crimson Text", serif;
+        font: bold 3rem "Crimson Text", serif;
         margin: 0;
         color: #432818;
     }
     
     .description {
-        font: 600 1rem "Crimson Text", serif;
+        font: 600 1.25rem "Crimson Text", serif;
         color: #432818;
-        padding: 10px 175px;
-        margin: 0%;
+        padding: 5px 20vw;
+        margin: 0;
         text-align: center;
     }
 
     .product-container {
         display: flex;
-        width: 90vw;
-        height: 275px;
-        gap: 20vw;
+        width: 100vw;
+        height: auto;
         align-items: center;
         justify-content: center;
         flex-wrap: nowrap;
@@ -602,27 +691,26 @@ body {
 
     .product-card {
         display: inline-block;
-        width: 19vw;
-        height: 26vw;
+        width: 40vh;
+        height: 55vh;
         background-color: #f2f4f3;
         color: #432818;
         border-radius: 10px;
         text-align: center;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-        margin: 0 10px;
+        margin: 0 20px;
     }
     
     .product-image {
-        width: 17vw;
-        height: 17vw;
+        width: 35vh;
+        height: 35vh;
         border: 2px solid #432818;
         border-radius: 10px;
-        position: relative;
-        top: 3%;
+        margin: 7px 0 0 0;
     }
 
     .product-name  {
-        font: bold 3vw "Crimson Text", serif;
+        font: bold 2rem"Crimson Text", serif;
         padding: 0;
     }
 
@@ -631,31 +719,31 @@ body {
         position: relative;
         z-index: -1;
         background-color: lightgray;
-        height: 100vh;
+        height: auto;
     }
 
     .review-content {
         display: flex;
         flex-direction: column;
         width: 100vw;
-        height: 90vh;
-        align-items: center;
+        height: auto;
         justify-content: center;
+        align-items: center;
     }
 
     .reviews-container {
         display: flex;
-        width: 100vw;
-        height: 300px;
-        gap: 5vw;
+        width: auto;
+        height: auto;
         align-items: center;
         justify-content: center;
+        gap: 20px;
         margin: 20px 0;
     }
 
     .review-card {
-        width: 20vw;
-        height: 30vw;
+        width: 50vh;
+        height: 60vh;
         background-color: #f2f4f3;
         border: 2px solid #432818;
         border-radius: 10px;
@@ -666,7 +754,7 @@ body {
     }
 
     .customer-name {
-        font: bold 2vw "Crimson Text", serif;
+        font: bold 1.75rem "Crimson Text", serif;
         color: #432818;
         word-spacing: 5px;
         padding: 10px 0 0 0;
@@ -677,18 +765,18 @@ body {
         color: #FFD43B;
         padding: 0 0 10px 0;
         margin: 0;
-        font-size: 1.5vw;
+        font-size: 1rem;
     }
 
     .review-title {
-        font: bold 1.5vw "Crimson Text", serif;
+        font: bold 1.25rem "Crimson Text", serif;
         color: #432818;
         padding: 0;
         margin: 0;
     }
 
     .review {
-        font: 1.5vw "Crimson Text", serif;
+        font: 1rem "Crimson Text", serif;
         color: #432818;
         padding: 0 10px;
     }
@@ -707,8 +795,8 @@ body {
 
     .logo-group {
         display: flex;
-        width: 200px;
-        height: 100px;
+        width: auto;
+        height: auto;
         align-items: center;
         justify-content: center;
     }
@@ -748,6 +836,7 @@ body {
     .social-media-links > a {
         color: #ddb892;
         padding: 0 10px;
+        font-size: 1.25rem;
     }
 
     .copyright {
