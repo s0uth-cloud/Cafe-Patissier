@@ -7,7 +7,7 @@ body {
 }
 
 /*Mobile View*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
     .navigation-bar {
         display: flex;
         align-items: center;
@@ -91,14 +91,13 @@ body {
         width: auto;
         height: 50px;
         gap: 5px;
+        align-items: center;
+        justify-content: center;
     }
 
     #shopping-cart {
-        position: relative;
-        top: 20px;
-        right: 10px;
         color: #ffe6a7;
-        margin: 0;
+        margin: 0 10px;
         transition: 0.3s;
     }
 
@@ -107,8 +106,6 @@ body {
     }
 
     #signIn-button {
-        position: relative;
-        top: 8px;
         width: 90px;
         height: 30px;
         border-radius: 50px;
@@ -125,8 +122,6 @@ body {
     }
 
     #signUp-button {
-        position: relative;
-        top: 8px;
         width: 90px;
         height: 30px;
         border-radius: 50px;
@@ -171,7 +166,7 @@ body {
     /*Top Section*/
     #top {
         background: url(assets/images/cafe_bg.webp) no-repeat center;
-        background-size: 100vh;
+        background-size: auto 100vh;
     }
 
     .top-content {
@@ -179,8 +174,8 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 70vw;
-        height:50vh;
+        width: 300px;
+        height:300px;
         background: rgba(255, 255, 255, 0.3);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -192,8 +187,8 @@ body {
     }
 
     #home-logo {
-        width: 35vw;
-        height: 30vw;
+        width: 40%;
+        height: 30%;
         object-fit: cover;
     }
 
@@ -202,7 +197,7 @@ body {
         margin: 0;
         padding: 0;
         position: relative;
-        top: -30px;
+        top: -20px;
     }
 
     .subtitle {
@@ -210,7 +205,7 @@ body {
         margin: 0;
         padding: 0;
         position: relative;
-        top: -35px;
+        top: -30px;
     }
 
     .shop-button {
@@ -253,7 +248,7 @@ body {
     }
     
     .description {
-        font: 600 3.5vw "Crimson Text", serif;
+        font: 600 1rem "Crimson Text", serif;
         color: #432818;
         padding: 5px 0;
         margin: 0;
@@ -278,7 +273,7 @@ body {
         border-radius: 10px;
         text-align: center;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-        margin: 0 5px;
+        margin: 0 1vw;
     }
     
     .product-image {
@@ -323,8 +318,8 @@ body {
     }
 
     .review-card {
-        width: 60vw;
-        height: 70vw;
+        width: 250px;
+        height: 300px;
         background-color: #f2f4f3;
         border: 2px solid #432818;
         border-radius: 10px;
@@ -335,7 +330,7 @@ body {
     }
 
     .customer-name {
-        font: bold 6vw "Crimson Text", serif;
+        font: bold 1.5rem "Crimson Text", serif;
         color: #432818;
         word-spacing: 5px;
         padding: 10px 0 0 0;
@@ -346,18 +341,18 @@ body {
         color: #FFD43B;
         padding: 0 0 10px 0;
         margin: 0;
-        font-size: 4vw;
+        font-size: 1rem;
     }
 
     .review-title {
-        font: bold 4vw "Crimson Text", serif;
+        font: bold 1rem "Crimson Text", serif;
         color: #432818;
         padding: 0;
         margin: 0;
     }
 
     .review {
-        font: 3.5vw "Crimson Text", serif;
+        font: 0.9rem "Crimson Text", serif;
         color: #432818;
         padding: 0 10px;
     }
@@ -427,7 +422,7 @@ body {
 }
 
 /*Desktop View*/
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 721px) {
     .navigation-bar {
         display: flex;
         align-items: center;
@@ -590,7 +585,7 @@ body {
     /*Top Section*/
     #top {
         background: url(assets/images/cafe_bg.webp) no-repeat center;
-        background-size: 100vw;
+        background-size: 100% auto;
     }
 
     .top-content {
@@ -598,8 +593,8 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 50vw;
-        height:80vh;
+        width: 450px;
+        height:400px;
         background: rgba(255, 255, 255, 0.3);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -611,8 +606,8 @@ body {
     }
 
     #home-logo {
-        width: 45vh;
-        height: 40vh;
+        width: 40%;
+        height: 40%;
         object-fit: cover;
         margin: 0;
     }
@@ -626,7 +621,7 @@ body {
     }
 
     .subtitle {
-        font: 600 2rem "Playfair Display", sans-serif;
+        font: 600 1.5rem "Playfair Display", sans-serif;
         margin: 0;
         padding: 0;
         position: relative;
@@ -642,11 +637,12 @@ body {
         font: 600 1rem "Crimson Text", serif;
         padding: 10px;
         position: relative;
-        top: -45px;
+        top: -40px;
         transition: 0.3s;
     }
 
     .shop-button:hover {
+        cursor: pointer;
         background-color: #f2f4f3;
         color: #0a0908;
     }
@@ -698,7 +694,7 @@ body {
         border-radius: 10px;
         text-align: center;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-        margin: 0 20px;
+        margin: 0 1vw;
     }
     
     .product-image {
@@ -733,7 +729,7 @@ body {
 
     .reviews-container {
         display: flex;
-        width: auto;
+        width: 100vw;
         height: auto;
         align-items: center;
         justify-content: center;
@@ -748,7 +744,6 @@ body {
         border: 2px solid #432818;
         border-radius: 10px;
         color: #432818;
-        text-align: justify;
         padding: 2px 10px;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     }
@@ -779,6 +774,7 @@ body {
         font: 1rem "Crimson Text", serif;
         color: #432818;
         padding: 0 10px;
+        text-align: justify;
     }
 
     /*Footer*/
