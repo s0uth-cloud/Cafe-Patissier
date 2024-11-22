@@ -1,0 +1,459 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+/*Mobile View*/
+@media screen and (max-width: 720px) {
+    .navigation-bar {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        background-color: #99582a;
+        width: 100vw;
+        height: 50px;
+        z-index: 999;
+        padding: 0;
+    }
+
+    .navigation {
+        width: 0px;
+        height: 100vh;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        right: 0;
+        background-color: #99582a;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .navigation > a {
+        display: block;
+        width: 70vw;
+        color: #ffe6a7;
+        text-decoration: none;
+        padding: 16px 8px 16px 8px;
+        font: 600 1rem "Crimson Text", serif;
+        transition: 0.3s;
+    }
+
+    .navigation > a:hover {
+        color: #ffedd8;
+        background-color: #432818;
+    }
+
+    .navigation > .close-button {
+        position: absolute;
+        top: 0;
+        left: 125px;
+        font-size: 36px;
+        margin: 0 75px;
+        padding: 3px 20px;
+        border-radius: 999px;
+    }
+
+    .open-button {
+        position: relative;
+        right: 0px;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #99582a;
+        color: #ffe6a7;
+        padding: 8px 15px;
+        margin: 0;
+        border: none;
+        transition: 0.3s;
+      }
+      
+      .open-button:hover {
+        background-color: #432818;
+      }
+    
+    #logo-button {
+        position: relative;
+        left: 3px;
+        width: 40px;
+        height: 40px;
+        background-color: #ddb892;
+        border-radius: 50%;
+    }
+
+    .menu-container {
+        display: flex;
+        position: absolute;
+        right: 0;
+        width: auto;
+        height: 50px;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #shopping-cart {
+        color: #ffe6a7;
+        margin: 0 10px;
+        transition: 0.3s;
+    }
+
+    #shopping-cart:hover {
+        color: #432818;
+    }
+
+    #signIn-button {
+        width: 90px;
+        height: 30px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        background-color: #ffe6a7;
+        color: #432818;
+        font: bold 0.8rem "Crimson Text", serif;
+        transition: 0.3s;
+    }
+
+    #signIn-button:hover {
+        background-color: #432818;
+        color: #ffe6a7;
+    }
+
+    #signUp-button {
+        width: 90px;
+        height: 30px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        background-color: #ffe6a7;
+        color: #432818;
+        font: bold 0.8rem "Crimson Text", serif;
+        transition: 0.3s;
+    }
+
+    #signUp-button:hover {
+        background-color: #432818;
+        color: #ffe6a7;
+    }
+    
+    #user-profile {
+        display: none;
+        position: absolute;
+        top: 3px;
+        right: 55px;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #ffe6a7;
+        border-radius: 50%;
+        transition: 0.3s;
+    }
+
+    #user-profile:hover {
+        border: 2px solid #432818;
+    }
+    
+    .page-section {
+        display: flex;
+        background-color: #ffe6a7;
+        width: 100vw;
+        height: auto;
+        padding: 20px 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*Orders*/
+    /* vvv Style here vvv */
+
+    /*Footer*/
+    footer {
+        display: flex;
+        background-color: #99582a;
+        width: 100vw;
+        height: 175px;
+        box-shadow: 10px 0 15px rgba(0, 0, 0, 0.3);
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .logo-group {
+        display: flex;
+        width: auto;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #logo-footer {
+        width: 75px;
+        height: 60px;
+        object-fit: cover;
+    }
+
+    .footer-cafe-title {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 8px;
+        left: -7px;
+        font: 1.3rem "Pacifico", Cursive;
+    }
+
+    .more-info {
+        font: 600 13px "Crimson Text", serif;
+        text-align: center;
+        color: #ddb892;
+        margin: 0;
+        padding: 0;
+    }
+
+    .info {
+        padding: 0;
+        margin: 0;
+    }
+
+    .social-media-links {
+        padding: 10px 10px 0;
+    }
+
+    .social-media-links > a {
+        color: #ddb892;
+        padding: 0 10px;
+        font-size: 1.25rem;
+    }
+
+    .copyright {
+        color: #ddb892;
+        font: 12px "Crimson Text", serif;
+    }
+}
+
+/*Desktop View*/
+@media screen and (min-width: 721px) {
+    .navigation-bar {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        background-color: #99582a;
+        width: 100vw;
+        height: 50px;
+        z-index: 999;
+        padding: 0;
+    }
+
+    .navigation {
+        width: 0px;
+        height: 100vh;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        right: 0;
+        background-color: #99582a;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .navigation > a {
+        display: block;
+        width: 70vw;
+        color: #ffe6a7;
+        text-decoration: none;
+        padding: 16px 8px 16px 8px;
+        font: 600 1rem "Crimson Text", serif;
+        transition: 0.3s;
+    }
+
+    .navigation > a:hover {
+        color: #ffedd8;
+        background-color: #432818;
+    }
+
+    .navigation > .close-button {
+        position: absolute;
+        top: 0;
+        left: 125px;
+        font-size: 36px;
+        margin: 0 75px;
+        padding: 3px 20px;
+        border-radius: 999px;
+    }
+
+    .open-button {
+        position: relative;
+        right: 0px;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #99582a;
+        color: #ffe6a7;
+        padding: 8px 15px;
+        margin: 0;
+        border: none;
+        transition: 0.3s;
+      }
+      
+      .open-button:hover {
+        background-color: #432818;
+      }
+    
+    #logo-button {
+        position: relative;
+        left: 3px;
+        width: 40px;
+        height: 40px;
+        background-color: #ddb892;
+        border-radius: 50%;
+    }
+
+    .menu-container {
+        display: flex;
+        position: absolute;
+        right: 0;
+        width: auto;
+        height: 50px;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #shopping-cart {
+        color: #ffe6a7;
+        margin: 0;
+        transition: 0.3s;
+        margin: 0 10px;
+    }
+
+    #shopping-cart:hover {
+        color: #432818;
+    }
+
+    #signIn-button {
+        width: 90px;
+        height: 30px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        background-color: #ffe6a7;
+        color: #432818;
+        font: bold 0.8rem "Crimson Text", serif;
+        transition: 0.3s;
+    }
+
+    #signIn-button:hover {
+        cursor: pointer;
+        background-color: #432818;
+        color: #ffe6a7;
+    }
+
+    #signUp-button {
+        width: 90px;
+        height: 30px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        background-color: #ffe6a7;
+        color: #432818;
+        font: bold 0.8rem "Crimson Text", serif;
+        transition: 0.3s;
+    }
+
+    #signUp-button:hover {
+        cursor: pointer;
+        background-color: #432818;
+        color: #ffe6a7;
+    }
+    
+    #user-profile {
+        display: none;
+        position: absolute;
+        top: 3px;
+        right: 55px;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #ffe6a7;
+        border-radius: 50%;
+        transition: 0.3s;
+    }
+
+    #user-profile:hover {
+        cursor: pointer;
+        border: 2px solid #432818;
+    }
+    
+    .page-section {
+        display: flex;
+        background-color: #ffe6a7;
+        width: 100vw;
+        height: auto;
+        padding: 20px 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*Orders*/
+    /* vvv Style here vvv */
+
+    /*Footer*/
+    footer {
+        display: flex;
+        background-color: #99582a;
+        width: 100vw;
+        height: 175px;
+        box-shadow: 10px 0 15px rgba(0, 0, 0, 0.3);
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .logo-group {
+        display: flex;
+        width: auto;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #logo-footer {
+        width: 75px;
+        height: 60px;
+        object-fit: cover;
+    }
+
+    .footer-cafe-title {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 8px;
+        left: -7px;
+        font: 1.3rem "Pacifico", Cursive;
+    }
+
+    .more-info {
+        font: 600 13px "Crimson Text", serif;
+        text-align: center;
+        color: #ddb892;
+        margin: 0;
+        padding: 0;
+    }
+
+    .info {
+        padding: 0;
+        margin: 0;
+    }
+
+    .social-media-links {
+        padding: 10px 10px 0;
+    }
+
+    .social-media-links > a {
+        color: #ddb892;
+        padding: 0 10px;
+        font-size: 1.25rem;
+    }
+
+    .copyright {
+        color: #ddb892;
+        font: 12px "Crimson Text", serif;
+    }
+}

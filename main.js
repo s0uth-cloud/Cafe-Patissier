@@ -6,4 +6,4 @@ function openNav() {
   /* Set the width of the sidebar to 0 (hide it) */
   function closeNav() {
     document.getElementById("nav-panel").style.width = "0";
-  }
+}
