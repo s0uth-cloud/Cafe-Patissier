@@ -163,7 +163,7 @@ body {
         justify-content: center;
     }
 
-    /*Profile*/
+    /*Sign In*/
     /* vvv Style here vvv */
 
     /*Footer*/
@@ -329,8 +329,43 @@ body {
     #shopping-cart:hover {
         color: #432818;
     }
+
+    #signIn-button {
+        width: 90px;
+        height: 30px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        background-color: #ffe6a7;
+        color: #432818;
+        font: bold 0.8rem "Crimson Text", serif;
+        transition: 0.3s;
+    }
+
+    #signIn-button:hover {
+        cursor: pointer;
+        background-color: #432818;
+        color: #ffe6a7;
+    }
+
+    #signUp-button {
+        width: 90px;
+        height: 30px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        background-color: #ffe6a7;
+        color: #432818;
+        font: bold 0.8rem "Crimson Text", serif;
+        transition: 0.3s;
+    }
+
+    #signUp-button:hover {
+        cursor: pointer;
+        background-color: #432818;
+        color: #ffe6a7;
+    }
     
     #user-profile {
+        display: none;
         position: absolute;
         top: 3px;
         right: 55px;
@@ -356,7 +391,7 @@ body {
         justify-content: center;
     }
 
-    /*Profile*/
+    /*Sign In*/
     /* vvv Style here vvv */
 
     /*Footer*/
