@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="userAuth.css">
     <script src="https://kit.fontawesome.com/45ea7a692b.js" crossorigin="anonymous"></script>
     <script src="/main.js" type="text/javascript"></script>
@@ -22,16 +22,23 @@
         </nav>
         <div class="menu-container">
             <a href="/cart/cart.html"><i class="fa-solid fa-cart-shopping" id="shopping-cart"></i></a>
-            <button id="signIn-button" href="/userAuth.html">Sign In</button>
-            <button id="signUp-button" href="/userAuth.html">Sign Up</button>
+            <button id="signIn-button" href="signIn.html">Sign In</button>
+            <button id="signUp-button" href="signUp.html">Sign Up</button>
             <a href="/profile/profile.html"><img src="assets/profilePhoto.jpg" alt="Profile Photo" id="user-profile"></a>
             <button class="open-button" onclick="openNav()">&#9776;</button>
         </div>
     </header>
     <main>
         <section class="page-section">
-            <div class="container">
-                <!--Place content here-->
+            <div class="container" id="signUp-container">
+                <h1>Create An Account</h1>
+                <form id="signUp-form">
+                    <input type="text" name="Name" id="name" placeholder="Name" required>
+                    <input type="email" name="Email" id="email" placeholder="Email Adress" required>
+                    <input type="password" name="Password" id="password" placeholder="Password" required>
+                    <button type="submit" id="signUp">Sign Up</button>
+                </form>
+                <p>Already have an account? <a href="signIn.html">Sign In</a></p>
             </div>
         </section>
     </main>
