@@ -164,7 +164,70 @@ body {
     }
 
     /*Shop*/
-    /* vvv Style here vvv */
+    .product-container {
+        display: grid;
+        width: 400px;
+        height: auto;
+        border: 2px solid #432818;
+        grid-template-columns: 120px 120px 120px;
+        text-align: center;
+        color: #432818;
+        margin: 60px 0 20px 0;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    h1 {
+        grid-column: 1 / span 3;
+    }
+
+    .product {
+        height: auto;
+        background-color: #f2f4f3;
+        border: 2px solid #432818;
+        border-radius: 10px;
+        padding: 5px 0;
+    }
+
+    .product-image {
+        width: 105px;
+        height: auto;
+        border: 2px solid #432818;
+        border-radius: 10px;
+    }
+
+    .product-name {
+        height: 50px;
+        font: bold 1.2rem "Crimson Text", serif;
+        padding: 0;
+        margin: 0;
+    }
+
+    .price {
+        font: 600 0.9rem "Crimson Text", serif;
+        padding: 0;
+        margin: 0;
+    }
+
+    .addToCart-button {
+        width: 100px;
+        height: 30px;
+        font: 600 1rem "Crimson Text", serif;
+        background-color: #99582a;
+        color: #ffe6a7;
+        border-radius: 10px;
+        border: 2px solid #432818;
+        transition: 0.3s;
+    }
+
+    .addToCart-button:hover {
+        cursor: pointer;
+        background-color: #ffe6a7;
+        color: #432818;
+    }
 
     /*Footer*/
     footer {
