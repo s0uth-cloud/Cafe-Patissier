@@ -340,11 +340,11 @@ body {
         margin: 0;
         border: none;
         transition: 0.3s;
-      }
+    }
       
-      .open-button:hover {
+    .open-button:hover {
         background-color: #432818;
-      }
+    }
     
     #logo-button {
         position: relative;
