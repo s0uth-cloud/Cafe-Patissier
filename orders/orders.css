@@ -128,10 +128,34 @@ body {
         padding: 20px 0;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+        padding: 50px 0;
     }
 
     /*Orders*/
-    /* vvv Style here vvv */
+    .container {
+        display: grid;
+        width: 300px;
+        height: auto;
+        grid-template-columns: auto auto;
+        background-color: #99582a;
+        border: 2px solid #432818;
+        padding: 5px;
+        border-radius: 20px;
+    }
+
+    h1 {
+        color: #432818;
+    }
+
+    .info-fields {
+        color: #ffe6a7;
+    }
+
+    .person-info {
+        color: #ffe6a7;
+        text-align: right;
+    }
 
     /*Footer*/
     footer {
