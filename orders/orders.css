@@ -134,27 +134,27 @@ body {
 
     /*Orders*/
     .container {
-        display: grid;
+        display: flex;
         width: 300px;
         height: auto;
-        grid-template-columns: auto auto;
         background-color: #99582a;
         border: 2px solid #432818;
         padding: 5px;
         border-radius: 20px;
+        flex-direction: column;
     }
 
     h1 {
         color: #432818;
     }
 
-    .info-fields {
+    .order-info {
         color: #ffe6a7;
     }
 
-    .person-info {
+    .order-info > h3 {
         color: #ffe6a7;
-        text-align: right;
+        text-align: center;
     }
 
     /*Footer*/
@@ -284,11 +284,11 @@ body {
         margin: 0;
         border: none;
         transition: 0.3s;
-      }
-      
-      .open-button:hover {
-        background-color: #432818;
-      }
+    }
+    
+    .open-button:hover {
+      background-color: #432818;
+    }
     
     #logo-button {
         position: relative;
@@ -380,10 +380,36 @@ body {
         padding: 20px 0;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+        padding: 50px 0;
     }
 
     /*Orders*/
-    /* vvv Style here vvv */
+    .container {
+        display: flex;
+        width: 400px;
+        height: auto;
+        background-color: #99582a;
+        border: 2px solid #432818;
+        padding: 0 20px;
+        border-radius: 20px;
+        flex-direction: column;
+    }
+
+    h1 {
+        color: #432818;
+    }
+
+    .order-info {
+        font: 1rem "Crimson Text", serif;
+        color: #ffe6a7;
+    }
+
+    .order-info > h3 {
+        font: bold 1.5rem "Crimson Text", serif;
+        color: #ffe6a7;
+        text-align: center;
+    }
 
     /*Footer*/
     footer {
