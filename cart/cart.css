@@ -69,11 +69,11 @@ body {
         margin: 0;
         border: none;
         transition: 0.3s;
-      }
-      
-      .open-button:hover {
-        background-color: #432818;
-      }
+    }
+    
+    .open-button:hover {
+      background-color: #432818;
+    }
     
     #logo-button {
         position: relative;
@@ -161,10 +161,237 @@ body {
         padding: 20px 0;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
     }
 
     /*Cart*/
-    /* vvv Style here vvv */
+    h1 {
+        margin: 50px 0 0 0;
+        padding: 0;
+        font: bold 1.75rem "Crimson Text", serif;
+        color: #432818;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        height: auto;
+        padding: 5px 2px;
+        margin: 10px 0;
+        border: 2px solid #432818;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product {
+        display: flex;
+        width: 350px;
+        height: 100px;
+        margin: 20px 0;
+        color: #432818;
+    }
+
+    .product-image {
+        width: 100px;
+        border: 2px solid #432818;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .product-info {
+        padding: 0;
+        margin: 0 5px;
+    }
+
+    .product-name {
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    .price {
+        margin: 10px 0;
+        padding: 0;
+        font: bold 1rem "Crimson Text", serif;
+        text-decoration: underline;
+    }
+
+    .quantity-selector {
+        display: flex;
+        width: 100px;
+        height: 20px;
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    .quantity-field {
+        width: 30px;
+        height: 15px;
+    }
+
+    .minus, .plus {
+        width: 20px;
+        padding: 0;
+        background-color: #99582a;
+        color: #ffe6a7;
+        font-weight: bold;
+    }
+
+    .minus:hover, .plus:hover {
+        cursor: pointer;
+        background-color: #ffe6a7;
+        color: #432818;
+        font-weight: bold;
+    }
+
+    .open-extras {
+        width: 100px;
+        height: 30px;
+        background: none;
+        border: none;
+        border-radius: 50px;
+        font: 600 1rem "Crimson Text", serif;
+        margin: auto;
+    }
+
+    .open-extras:hover {
+        cursor: pointer;
+        border: 2px solid #432818;
+    }
+
+    .extras {
+        display: none;
+        width: 300px;
+        height: 200px;
+        position: fixed;
+        z-index: 999;
+        background-color: #ffe6a7;
+        overflow: hidden;
+        transition: 0.5s;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+        border: 2px solid #432818;
+        border-radius: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .extras > h1 {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: -5px;
+        font-size: 1.5rem;
+    }
+    
+    .extras > div > label {
+        font: 600 1rem "Crimson Text", serif;
+        padding: 0 10px;
+        text-align: right;
+    }
+    
+    .shot-selector {
+        display: flex;
+        width: 150px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .shot-count {
+        width: 50px;
+        height: 20px;
+        text-align: center;
+    }
+
+    .sugar-selector {
+        display: flex;
+        width: 175px;
+    }
+
+    .sugar-level{
+        width: 50px;
+        height: 20px;
+    }
+
+    .confirm-extras {
+        width: 100px;
+        height: 30px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        background-color: #99582a;
+        color: #ffe6a7;
+        font: bold 1rem "Crimson Text", serif;
+    }
+
+    .cancel-extras {
+        width: 100px;
+        height: 30px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        background-color: #ddb892;
+        color: #432818;
+        font: bold 1rem "Crimson Text", serif;
+    }
+
+    .confirm-extras:hover, .cancel-extras:hover {
+        cursor: pointer;
+        background-color: #432818;
+        color: #ffe6a7;
+    }
+
+    .remove-button {
+        width: 30px;
+        height: 30px;
+        font-size: 1.5rem;
+        text-align: center;
+        background: none;
+        border: none;
+    }
+
+    .remove-button:hover {
+        cursor: pointer;
+    }
+
+    .checkout-button {
+        width: 150px;
+        height: 30px;
+        font: 600 1rem "Crimson Text", serif;
+        color: #ffe6a7;
+        background-color: #99582a;
+        border-radius: 50px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+        margin: 5px;
+        transition: 0.3s;
+    }
+
+    .continue-button {
+        width: 150px;
+        height: 30px;
+        font: 600 1rem "Crimson Text", serif;
+        color: #432818;
+        background-color: #ddb892;
+        border-radius: 50px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+        margin: 5px;
+        transition: 0.3s;
+    }
+
+    .checkout-button:hover {
+        cursor: pointer;
+        background-color: #ffe6a7;
+        color: #432818;
+    } 
+
+    .continue-button:hover {
+        cursor: pointer;
+        background-color: #432818;
+        color: #ffe6a7;
+    }
 
     /*Footer*/
     footer {
@@ -389,10 +616,241 @@ body {
         padding: 20px 0;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
     }
 
     /*Cart*/
-    /* vvv Style here vvv */
+    h1 {
+        margin: 50px 0 0 0;
+        padding: 0;
+        font: bold 1.75rem "Crimson Text", serif;
+        color: #432818;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+        height: auto;
+        padding: 5px 2px;
+        margin: 10px 0;
+        border: 2px solid #432818;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product {
+        display: flex;
+        width: 680px;
+        height: 100px;
+        margin: 20px 0;
+        color: #432818;
+    }
+
+    .product-image {
+        width: 100px;
+        border: 2px solid #432818;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .product-info {
+        padding: 0;
+        margin: 0 5px;
+    }
+
+    .product-name {
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    .price {
+        margin: 10px 0;
+        padding: 0;
+        font: bold 1rem "Crimson Text", serif;
+        text-decoration: underline;
+    }
+
+    .quantity-selector {
+        display: flex;
+        width: 100px;
+        height: 20px;
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    .quantity-field {
+        width: 30px;
+        height: 15px;
+    }
+
+    .minus, .plus {
+        width: 20px;
+        padding: 0;
+        background-color: #99582a;
+        color: #ffe6a7;
+        font-weight: bold;
+    }
+
+    .minus:hover, .plus:hover {
+        cursor: pointer;
+        background-color: #ffe6a7;
+        color: #432818;
+        font-weight: bold;
+    }
+
+    .open-extras {
+        width: 100px;
+        height: 30px;
+        background-color: #99582a;
+        border: 2px solid #432818;
+        border-radius: 50px;
+        font: 600 1rem "Crimson Text", serif;
+        margin: auto 20px auto auto;
+        color: #ffe6a7;
+        transition: 0.3s;
+    }
+
+    .open-extras:hover {
+        cursor: pointer;
+        background-color: #ffe6a7;
+        color: #432818;
+    }
+
+    .extras {
+        display: none;
+        width: 400px;
+        height: 300px;
+        position: fixed;
+        z-index: 999;
+        background-color: #ffe6a7;
+        overflow: hidden;
+        transition: 0.5s;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+        border: 2px solid #432818;
+        border-radius: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .extras > h1 {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: -30px;
+        font-size: 1.5rem;
+    }
+    
+    .extras > div > label {
+        font: 600 1rem "Crimson Text", serif;
+        padding: 0 10px;
+        text-align: right;
+    }
+    
+    .shot-selector {
+        display: flex;
+        width: 150px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .shot-count {
+        width: 50px;
+        height: 20px;
+        text-align: center;
+    }
+
+    .sugar-selector {
+        display: flex;
+        width: 175px;
+    }
+
+    .sugar-level{
+        width: 50px;
+        height: 20px;
+    }
+
+    .confirm-extras {
+        width: 100px;
+        height: 30px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        background-color: #99582a;
+        color: #ffe6a7;
+        font: bold 1rem "Crimson Text", serif;
+        margin-top: 30px;
+    }
+
+    .cancel-extras {
+        width: 100px;
+        height: 30px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        background-color: #ddb892;
+        color: #432818;
+        font: bold 1rem "Crimson Text", serif;
+    }
+
+    .confirm-extras:hover, .cancel-extras:hover {
+        cursor: pointer;
+        background-color: #432818;
+        color: #ffe6a7;
+    }
+
+    .remove-button {
+        width: 30px;
+        height: 30px;
+        font-size: 1.5rem;
+        text-align: center;
+        background: none;
+        border: none;
+    }
+
+    .remove-button:hover {
+        cursor: pointer;
+    }
+
+    .checkout-button {
+        width: 150px;
+        height: 30px;
+        font: 600 1rem "Crimson Text", serif;
+        color: #ffe6a7;
+        background-color: #99582a;
+        border-radius: 50px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+        margin: 5px;
+        transition: 0.3s;
+    }
+
+    .continue-button {
+        width: 150px;
+        height: 30px;
+        font: 600 1rem "Crimson Text", serif;
+        color: #432818;
+        background-color: #ddb892;
+        border-radius: 50px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+        margin: 5px;
+        transition: 0.3s;
+    }
+
+    .checkout-button:hover {
+        cursor: pointer;
+        background-color: #ffe6a7;
+        color: #432818;
+    } 
+
+    .continue-button:hover {
+        cursor: pointer;
+        background-color: #432818;
+        color: #ffe6a7;
+    }
 
     /*Footer*/
     footer {

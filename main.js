@@ -8,6 +8,19 @@ function closeNav() {
     document.getElementById("nav-panel").style.width = "0";
 }
 
+function openExtrasMenu() {
+    document.getElementById("extras-menu").style.display = "flex";
+}
+
+function closeExtrasMenu() {
+    document.getElementById("extras-menu").style.display = "none";
+}
+
+function confirmExtras() {
+    document.getElementById("extras-menu").style.display = "none";
+    alert("Extras successfully added");
+}
+
 /* Sign In/Sign Up */
 const signInForm = document.getElementById('signIn-form');
 const signUpForm = document.getElementById('signUp-form');
@@ -48,3 +61,6 @@ signInForm.addEventListener('submit', (e) => {
         alert('Invalid email or password.');
     }
 });
+
+
+/* Quantity Selector */

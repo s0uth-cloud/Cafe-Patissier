@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="navigation-bar">
-        <a href="#top"><img src="/assets/logo.webp" alt="Café Pâtissier Logo" id="logo-button"></a>
+        <a href="/home.html"><img src="/assets/logo.webp" alt="Café Pâtissier Logo" id="logo-button"></a>
         <nav class="navigation" id="nav-panel">
             <a href="javascript:void(0)" class="close-button" onclick="closeNav()">&times;</a>
             <a href="#top">Home</a>
@@ -22,16 +22,79 @@
         </nav>
         <div class="menu-container">
             <a href="/cart/cart.html"><i class="fa-solid fa-cart-shopping" id="shopping-cart"></i></a>
-            <button id="signIn-button" onclick="window.location.href='signIn.html'">Sign In</button>
-            <button id="signUp-button" onclick="window.location.href='signUp.html'">Sign Up</button>
+            <button id="signIn-button" onclick="window.location.href='/signIn.html'">Sign In</button>
+            <button id="signUp-button" onclick="window.location.href='/signUp.html'">Sign Up</button>
             <a href="/profile/profile.html"><img src="/assets/profilePhoto.jpg" alt="Profile Photo" id="user-profile"></a>
             <button class="open-button" onclick="openNav()">&#9776;</button>
         </div>
     </header>
     <main>
         <section class="page-section">
+            <h1>My Cart</h1>
             <div class="container">
-                <!--Place content here-->
+                <div class="product coffee">
+                    <button class="remove-button">&times;</button>
+                    <img src="/assets/products/cappuccino.webp" alt="Cappuccino" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Cappuccino</h3>
+                        <p class="price">Php 49.00</p>
+                        <div class="quantity-selector">
+                            <button class="qty-count minus" data-action="minus">-</button>
+                            <input type="number" value="1" min="1" max="50" class="quantity-field" />
+                            <button class="qty-count plus" data-action="add">+</button>
+                        </div>
+                    </div>
+                    <button class="open-extras" onclick="openExtrasMenu()">Add extras+</button>
+                    <div class="extras" id="extras-menu">
+                        <h1>Add Extras</h1>
+                        <div class="shot-selector">
+                            <label for="shots">Shots:</label>
+                            <select name="shots" class="shot-count">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="sugar-selector">
+                        <label for="Sugar Level">Sugar Level:</label>
+                        <select name="Sugar Level" class="sugar-level">
+                            <option value="0">None</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                        </div>
+                        <button class="confirm-extras" onclick="confirmExtras()">Confirm</button>
+                        <button class="cancel-extras" onclick="closeExtrasMenu()">Cancel</button>
+                    </div>
+                </div>
+                <div class="product pastry">
+                    <button class="remove-button">&times;</button>
+                    <img src="/assets/products/croissant.webp" alt="Croissant" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Croissant</h3>
+                        <p class="price">Php 39.00</p>
+                        <div class="quantity-selector">
+                            <button class="minus">-</button>
+                            <input type="number" value="1" min="1" class="quantity-field" />
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product cake">
+                    <button class="remove-button">&times;</button>
+                    <img src="/assets/products/redVelvet.webp" alt="Red Velvet Cake" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Red Velvet Cake</h3>
+                        <p class="price">Php 159.00</p>
+                        <div class="quantity-selector">
+                            <button class="minus">-</button>
+                            <input type="number" value="1" min="1" class="quantity-field" />
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="checkout-button" onclick="window.location.href='/checkout/checkout.html'">Checkout</button>
+                <button class="continue-button" onclick="window.location.href='/shop/shop.html'">Continue Shopping</button>
             </div>
         </section>
     </main>
