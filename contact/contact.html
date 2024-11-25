@@ -31,7 +31,13 @@
     <main>
         <section class="page-section">
             <div class="container">
-                <!--Place content here-->
+                <h1>Leave us a message</h1>
+                <form>
+                    <input type="email" name="Email" id="user-email" placeholder="Email Address" required>
+                    <input type="text" name="Subject" id="subject" placeholder="Subject(Optional)">
+                    <textarea name="Feedback" id="feedback" placeholder="Enter a message..." rows="10" required></textarea>
+                    <button type="submit" id="submit-button" onclick="submitted()">Submit</button>
+                </form>
             </div>
         </section>
     </main>
