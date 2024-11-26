@@ -69,19 +69,20 @@ body {
         margin: 0;
         border: none;
         transition: 0.3s;
-      }
-      
-      .open-button:hover {
-        background-color: #432818;
-      }
+    }
+    
+    .open-button:hover {
+      background-color: #432818;
+    }
     
     #logo-button {
         position: relative;
         left: 3px;
         width: 40px;
         height: 40px;
-        background-color: #ddb892;
+        background-color: #ffe6a7;
         border-radius: 50%;
+        border: 2px solid #432818;
     }
 
     .menu-container {
@@ -198,6 +199,7 @@ body {
         padding: 0;
         position: relative;
         top: -20px;
+        text-decoration: underline;
     }
 
     .subtitle {
@@ -211,7 +213,7 @@ body {
     .shop-button {
         width: 175px;
         height: 50px;
-        border-radius: 20px;
+        border-radius: 50px;
         color: #f2f4f3;
         background-color: #0a0908;
         font: 600 0.9rem "Crimson Text", serif;
@@ -222,6 +224,7 @@ body {
     }
 
     .shop-button:hover {
+        cursor: pointer;
         background-color: #f2f4f3;
         color: #0a0908;
     }
@@ -484,19 +487,20 @@ body {
         margin: 0;
         border: none;
         transition: 0.3s;
-      }
-      
-      .open-button:hover {
-        background-color: #432818;
-      }
+    }
+    
+    .open-button:hover {
+      background-color: #432818;
+    }
     
     #logo-button {
         position: relative;
         left: 3px;
         width: 40px;
         height: 40px;
-        background-color: #ddb892;
+        background-color: #ffe6a7;
         border-radius: 50%;
+        border: 2px solid #432818;
     }
 
     .menu-container {
@@ -618,6 +622,7 @@ body {
         padding: 0;
         position: relative;
         top: -50px;
+        text-decoration: underline;
     }
 
     .subtitle {
