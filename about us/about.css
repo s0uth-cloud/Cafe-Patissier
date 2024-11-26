@@ -157,14 +157,35 @@ body {
         display: flex;
         background-color: #ffe6a7;
         width: 100vw;
-        height: auto;
+        height: 100vh;
         padding: 20px 0;
         align-items: center;
         justify-content: center;
     }
 
     /*About Us*/
-    /* vvv Style here vvv */
+    .container {
+        width: 90vw;
+    }
+
+    .aboutUs-title {
+        font: bold 2.5rem "Crimson Text", serif;
+        color: #432818;
+        margin-bottom: 20px;
+        text-align: center;
+
+    }
+
+    .aboutUs-desc {
+        color: #432818;
+        text-align: justify;
+        font: 1rem "Crimson Text, serif";
+        padding: 0 0 20px 0;
+    }
+
+    #cafe-pic-bg {
+        display: none;
+    }
 
     /*Footer*/
     footer {
@@ -385,14 +406,54 @@ body {
         display: flex;
         background-color: #ffe6a7;
         width: 100vw;
-        height: auto;
+        height: 100vh;
         padding: 20px 0;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
     }
 
     /*About Us*/
-    /* vvv Style here vvv */
+    .cointainer {
+        display: flex;
+        width: 100vw;
+        height: auto;
+        padding: 0;
+        align-items: center;
+        margin: 0;
+    }
+
+    .aboutUs-title {
+        font: bold 3rem "Crimson Text", serif;
+        color: #432818;
+        position: relative;
+        top: 33vh;
+        right: 7vw;
+    }
+
+    .aboutUs-desc {
+        text-align: justify;
+        height: auto;
+        width: 40vw;
+        font: 1rem "Crimson Text", serif;
+        color: #432818;
+        position: relative;
+        top: 33vh;
+        right: 15vw;
+        margin-right: 20px;
+    }
+
+    #cafe-pic-bg {
+        width:60vw;
+        height: 400px;
+        background: url(/assets/images/cafe_bg.webp) center;
+        object-fit: cover;
+        border-radius: 40px;
+        position: relative;
+        bottom: 33vh;
+        left: 30vw;
+        margin: 0;
+    }
 
     /*Footer*/
     footer {
