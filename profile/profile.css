@@ -69,18 +69,19 @@ body {
         margin: 0;
         border: none;
         transition: 0.3s;
-      }
-      
-      .open-button:hover {
-        background-color: #432818;
-      }
+    }
+    
+    .open-button:hover {
+      background-color: #432818;
+    }
     
     #logo-button {
         position: relative;
         left: 3px;
         width: 40px;
         height: 40px;
-        background-color: #ddb892;
+        background-color: #ffe6a7;
+        border: 2px solid #432818;
         border-radius: 50%;
     }
 
@@ -164,7 +165,205 @@ body {
     }
 
     /*Profile*/
-    /* vvv Style here vvv */
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .yourProfile-title {
+        font: bold 2rem "Crimson Text", serif;
+        color: #432818;
+    }
+
+    #pfp-icon {
+        width: 75px;
+        height: 75px;
+        position: relative;
+        right: 155px;
+    }
+
+    .name-container {
+        background-color: #99582a;
+        border: 2px solid #432818;
+        border-radius: 50px;
+        position: relative;
+        bottom: 60px;
+        left: 20px;
+        width: 250px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffe6a7;
+        font: 600 1.5rem "Crimson Text", serif;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .info-container {
+        background-color: #99582a;
+        border: 2px solid #432818;
+        border-radius: 20px;
+        position: relative;
+        width: 360px;
+        height: 350px;
+        color: #ffe6a7;
+        font: 600 1rem "Crimson Text", serif;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .container-title {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .uid-container {
+        background-color: white;
+        height: 25px;
+        width: 260px;
+        position: absolute;
+        bottom: 240px;
+        left: 110px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        color: #432818;
+        font-size: 0.8rem;
+        display: flex;
+        padding: 0 5px 0 0;
+        align-items: center;
+    }
+
+    .contact-container {
+        background-color: white;
+        height: 25px;
+        width: 260px;
+        position: absolute;
+        bottom: 187px;
+        left: 110px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        display: flex;
+        padding: 0 5px 0 0;
+        align-items: center;
+        color: #432818;
+    }
+
+    .email-container {
+        background-color: white;
+        height: 25px;
+        width: 260px;
+        position: absolute;
+        bottom: 135px;
+        left: 110px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        display: flex;
+        padding: 0 5px 0 0;
+        align-items: center;
+        color: #432818;
+    }
+
+    .gender-container {
+        background-color: white;
+        height: 25px;
+        width: 100px;
+        position: absolute;
+        bottom: 83px;
+        left: 110px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        display: flex;
+        padding: 0 5px 0 0;
+        align-items: center;
+        color: #432818;
+    }
+
+    .address-container {
+        background-color: white;
+        height: 25px;
+        width: 260px;
+        position: absolute;
+        bottom: 32px;
+        left: 110px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        display: flex;
+        padding: 0 5px 0 0;
+        align-items: center;
+        color: #432818;
+    }
+
+    .orders-info-container {
+        background-color: #99582a;
+        border: 2px solid #432818;
+        border-radius: 20px;
+        position: relative;
+        width: 360px;
+        height: 220px;
+        padding: 0 10px;
+        margin: 10px 0;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        color: #ffe6a7;
+        font: 600 1rem "Crimson Text", serif;
+    }
+
+    .total-container {
+        background-color: white;
+        height: 25px;
+        width: 100px;
+        position: absolute;
+        bottom: 110px;
+        left: 140px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        display: flex;
+        padding: 0 5px;
+        align-items: center;
+        color: #432818;
+    }
+
+    .cancelled-container {
+        background-color: white;
+        height: 25px;
+        width: 100px;
+        position: absolute;
+        bottom: 58px;
+        left: 140px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        color: #432818;
+        display: flex;
+        padding: 0 5px;
+        align-items: center;
+    }
+
+    .open-history-button {
+        align-self: center;
+        justify-self: center;
+        width: 150px;
+        height: 40px;
+        border: 2px solid #432818;
+        border-radius: 50px;
+        background-color: #432818;
+        color: #ffe6a7;
+        font: bold 1rem "Crimson Text", serif;
+        transition: 0.3s;
+    }
+
+    .open-history-button:hover {
+        cursor: pointer;
+        background-color: #ffe6a7;
+        color: #432818;
+    }
 
     /*Footer*/
     footer {
@@ -293,18 +492,19 @@ body {
         margin: 0;
         border: none;
         transition: 0.3s;
-      }
-      
-      .open-button:hover {
-        background-color: #432818;
-      }
+    }
+    
+    .open-button:hover {
+      background-color: #432818;
+    }
     
     #logo-button {
         position: relative;
         left: 3px;
         width: 40px;
         height: 40px;
-        background-color: #ddb892;
+        background-color: #ffe6a7;
+        border: 2px solid #432818;
         border-radius: 50%;
     }
 
@@ -357,7 +557,205 @@ body {
     }
 
     /*Profile*/
-    /* vvv Style here vvv */
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .yourProfile-title {
+        font: bold 2rem "Crimson Text", serif;
+        color: #432818;
+    }
+
+    #pfp-icon {
+        width: 75px;
+        height: 75px;
+        position: relative;
+        right: 155px;
+    }
+
+    .name-container {
+        background-color: #99582a;
+        border: 2px solid #432818;
+        border-radius: 50px;
+        position: relative;
+        bottom: 60px;
+        left: 20px;
+        width: 250px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffe6a7;
+        font: 600 1.5rem "Crimson Text", serif;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .info-container {
+        background-color: #99582a;
+        border: 2px solid #432818;
+        border-radius: 20px;
+        position: relative;
+        width: 400px;
+        height: 350px;
+        color: #ffe6a7;
+        font: 600 1rem "Crimson Text", serif;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .container-title {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .uid-container {
+        background-color: white;
+        height: 25px;
+        width: 260px;
+        position: absolute;
+        bottom: 240px;
+        left: 110px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        color: #432818;
+        font-size: 0.8rem;
+        display: flex;
+        padding: 0 5px;
+        align-items: center;
+    }
+
+    .contact-container {
+        background-color: white;
+        height: 25px;
+        width: 260px;
+        position: absolute;
+        bottom: 187px;
+        left: 110px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        display: flex;
+        padding: 0 5px;
+        align-items: center;
+        color: #432818;
+    }
+
+    .email-container {
+        background-color: white;
+        height: 25px;
+        width: 260px;
+        position: absolute;
+        bottom: 135px;
+        left: 110px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        display: flex;
+        padding: 0 5px;
+        align-items: center;
+        color: #432818;
+    }
+
+    .gender-container {
+        background-color: white;
+        height: 25px;
+        width: 100px;
+        position: absolute;
+        bottom: 83px;
+        left: 110px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        display: flex;
+        padding: 0 5px;
+        align-items: center;
+        color: #432818;
+    }
+
+    .address-container {
+        background-color: white;
+        height: 25px;
+        width: 260px;
+        position: absolute;
+        bottom: 32px;
+        left: 110px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        display: flex;
+        padding: 0 5px;
+        align-items: center;
+        color: #432818;
+    }
+
+    .orders-info-container {
+        background-color: #99582a;
+        border: 2px solid #432818;
+        border-radius: 20px;
+        position: relative;
+        width: 400px;
+        height: 220px;
+        padding: 0 10px;
+        margin: 10px 0;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        color: #ffe6a7;
+        font: 600 1rem "Crimson Text", serif;
+    }
+
+    .total-container {
+        background-color: white;
+        height: 25px;
+        width: 100px;
+        position: absolute;
+        bottom: 110px;
+        left: 140px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        display: flex;
+        padding: 0 5px;
+        align-items: center;
+        color: #432818;
+    }
+
+    .cancelled-container {
+        background-color: white;
+        height: 25px;
+        width: 100px;
+        position: absolute;
+        bottom: 58px;
+        left: 140px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        color: #432818;
+        display: flex;
+        padding: 0 5px;
+        align-items: center;
+    }
+
+    .open-history-button {
+        align-self: center;
+        justify-self: center;
+        width: 150px;
+        height: 40px;
+        border: 2px solid #432818;
+        border-radius: 50px;
+        background-color: #432818;
+        color: #ffe6a7;
+        font: bold 1rem "Crimson Text", serif;
+        transition: 0.3s;
+    }
+
+    .open-history-button:hover {
+        cursor: pointer;
+        background-color: #ffe6a7;
+        color: #432818;
+    }
 
     /*Footer*/
     footer {

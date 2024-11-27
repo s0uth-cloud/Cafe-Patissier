@@ -10,13 +10,13 @@
 </head>
 <body>
     <header class="navigation-bar">
-        <a href="#top"><img src="/assets/logo.webp" alt="Café Pâtissier Logo" id="logo-button"></a>
+        <a href="/home.html"><img src="/assets/logo.webp" alt="Café Pâtissier Logo" id="logo-button"></a>
         <nav class="navigation" id="nav-panel">
             <a href="javascript:void(0)" class="close-button" onclick="closeNav()">&times;</a>
-            <a href="#top">Home</a>
+            <a href="/home.html">Home</a>
             <a href="/shop/shop.html">Shop</a>
-            <a href="#products">Products</a>
-            <a href="#reviews">Reviews</a>
+            <a href="/home.html#products">Products</a>
+            <a href="/home.html#reviews">Reviews</a>
             <a href="/about us/about.html">About Us</a>
             <a href="/contact/contact.html">Contact</a>
         </nav>
@@ -29,7 +29,30 @@
     <main>
         <section class="page-section">
             <div class="container">
-                <!--Place content here-->
+                <h1 class="yourProfile-title">YOUR PROFILE</h1>
+                <img src="/assets/pfppic.png" alt="Profile Picture Icon" id="pfp-icon">
+                <div class="name-container"><p class="username">John Doe</p></div>
+                <div class="info-container">
+                    <h2 class="container-title">Account Details</h2>
+                    <p class="info-container-text">UID:</p>
+                    <p class="info-container-text">Contact No.:</p>
+                    <p class="info-container-text">Email Address:</p>
+                    <p class="info-container-text">Gender:</p>
+                    <p class="info-container-text">Address:</p>
+                    <div class="uid-container">dc696af8-3769-4f1d-bc47-1a211ad75435</div>
+                    <div class="contact-container">09876543212</div>
+                    <div class="email-container">nikocunanan@gmail.com</div>
+                    <div class="gender-container">Male</div>
+                    <div class="address-container">123 Salapungan, Gerona, Tarlac</div>
+                </div>
+                <div class="orders-info-container">
+                    <h2 class="container-title">Orders</h2>
+                    <p class="orders-info-container-text">Total Orders:</p>
+                    <p class="orders-info-container-text">Cancelled Orders:</p>
+                    <div class="total-container">1</div>
+                    <div class="cancelled-container">0</div>
+                    <button class="open-history-button" onclick="window.location.href='/orders/orders.html'">Order History</button>
+                </div>
             </div>
         </section>
     </main>
@@ -47,7 +70,7 @@
             <a target="_blank" href="https://www.x.com"><i class="fa-brands fa-x-twitter" id="twitter"></i></a>
             <a target="_blank" href="https://www.instagram.com"><i class="fa-brands fa-instagram" id="instagram"></i></a>
             <a target="_blank" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
-            <a target="_blank" href="mailto:cafepatissier@gmail.com"><i class="fa-regular fa-envelope" id="email"></i></a>
+            <a target="_blank" href="mailto:cafepatissier@gmail.com"><i class="fa-regular fa-envelope" id="business-email"></i></a>
         </div>
         <p class="copyright">&copy;2024 Café Pâtissier. All rights reserved.</p>
     </footer>
