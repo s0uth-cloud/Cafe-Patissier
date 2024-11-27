@@ -10,13 +10,13 @@
 </head>
 <body>
     <header class="navigation-bar">
-        <a href="#top"><img src="/assets/logo.webp" alt="Café Pâtissier Logo" id="logo-button"></a>
+        <a href="/home.html"><img src="/assets/logo.webp" alt="Café Pâtissier Logo" id="logo-button"></a>
         <nav class="navigation" id="nav-panel">
             <a href="javascript:void(0)" class="close-button" onclick="closeNav()">&times;</a>
-            <a href="#top">Home</a>
+            <a href="/home.html">Home</a>
             <a href="/shop/shop.html">Shop</a>
-            <a href="#products">Products</a>
-            <a href="#reviews">Reviews</a>
+            <a href="/home.html#products">Products</a>
+            <a href="/home.html#reviews">Reviews</a>
             <a href="/about us/about.html">About Us</a>
             <a href="/contact/contact.html">Contact</a>
         </nav>
@@ -31,7 +31,62 @@
     <main>
         <section class="page-section">
             <div class="container">
-                <!--Place content here-->
+                <p class="page-title">Place Your Order</p>
+                <form class="payment-info-container">
+                    <h1>Payment Details</h1>
+                    <label>Full Name:</label>
+                    <input type="text" id="name-field" name="Name Field" placeholder="Enter Your Full Name" required>
+                    <label>Contact No.:</label>
+                    <input type="tel" id="contact-field" name="Contact Number" placeholder="Enter Your Phone Number" minlength="10" maxlength="11" required>
+                    <label>Email Address:</label>
+                    <input type="email" id="email-field" name="Email Address" placeholder="Enter Your Email Address" required>
+                    <label>ZIP Code:</label>
+                    <input type="number" id="zip-code" name="ZIP Code" placeholder="ZIP Code" minlength="4" maxlength="4" required>
+                    <label>Province:</label>
+                    <input type="text" id="province-field" name="Province" placeholder="Province" required>
+                    <label>Town/City:</label>
+                    <input type="text" id="city-field" name="Town/City" placeholder="Town or City" required>
+                    <label>Full Address:</label>
+                    <input type="text" id="address-field" name="Address" placeholder="Enter Your Full Address" required>
+                    <label>Payment Method:</label>
+                    <select id="payment-method" name="Payment Method" required>
+                        <option value="cash-on-delivery">Cash On Delivery</option>
+                        <option value="bank">Bank Pay</option>
+                        <option value="e-wallet">E-Wallet</option>
+                    </select>
+                    <button id="cancel-button">Cancel</button>
+                    <button id="confirm-button">Confirm</button>
+                </form>
+
+                <h2 class="products-title">Products You Will Receive</h2>
+                <div class="products-list">
+                    <div class="product">
+                        <img src="/assets/products/cappuccino.webp" alt="Cappuccino" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Cappuccino</h3>
+                            <h3 class="product-price">Price: Php 69.00</h3>
+                            <h3 class="product-quantity">Quantity: 1</h3>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="/assets/products/croissant.webp" alt="Croissant" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Croissant</h3>
+                            <h3 class="product-price">Price: Php 39.00</h3>
+                            <h3 class="product-quantity">Quantity: 1</h3>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="/assets/products/redVelvet.webp" alt="Red Velvet Cake" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Red Velvet Cake</h3>
+                            <h3 class="product-price">Price: Php 159.00</h3>
+                            <h3 class="product-quantity">Quantity: 1</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <h1 id="grand-total">Total: Php 267.00</h1>
             </div>
         </section>
     </main>
@@ -49,7 +104,7 @@
             <a target="_blank" href="https://www.x.com"><i class="fa-brands fa-x-twitter" id="twitter"></i></a>
             <a target="_blank" href="https://www.instagram.com"><i class="fa-brands fa-instagram" id="instagram"></i></a>
             <a target="_blank" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
-            <a target="_blank" href="mailto:cafepatissier@gmail.com"><i class="fa-regular fa-envelope" id="email"></i></a>
+            <a target="_blank" href="mailto:cafepatissier@gmail.com"><i class="fa-regular fa-envelope" id="business-email"></i></a>
         </div>
         <p class="copyright">&copy;2024 Café Pâtissier. All rights reserved.</p>
     </footer>

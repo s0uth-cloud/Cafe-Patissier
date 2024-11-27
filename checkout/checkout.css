@@ -59,29 +59,30 @@ body {
     }
 
     .open-button {
-        position: relative;
-        right: 0px;
-        font-size: 20px;
-        cursor: pointer;
-        background-color: #99582a;
-        color: #ffe6a7;
-        padding: 8px 15px;
-        margin: 0;
-        border: none;
-        transition: 0.3s;
-      }
-      
-      .open-button:hover {
-        background-color: #432818;
-      }
+      position: relative;
+      right: 0px;
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #99582a;
+      color: #ffe6a7;
+      padding: 8px 15px;
+      margin: 0;
+      border: none;
+      transition: 0.3s;
+    }
+    
+    .open-button:hover {
+      background-color: #432818;
+    }
     
     #logo-button {
         position: relative;
         left: 3px;
         width: 40px;
         height: 40px;
-        background-color: #ddb892;
-        border-radius: 50%;
+        background-color: #ffe6a7;
+        border-radius: 50px;
+        border: 2px solid #432818;
     }
 
     .menu-container {
@@ -119,6 +120,7 @@ body {
     #signIn-button:hover {
         background-color: #432818;
         color: #ffe6a7;
+        cursor: pointer;
     }
 
     #signUp-button {
@@ -135,6 +137,7 @@ body {
     #signUp-button:hover {
         background-color: #432818;
         color: #ffe6a7;
+        cursor: pointer;
     }
     
     #user-profile {
@@ -161,10 +164,194 @@ body {
         padding: 20px 0;
         align-items: center;
         justify-content: center;
+        padding: 50px 0;
     }
 
     /*Checkout*/
-    /* vvv Style here vvv */
+    .container {
+        display: flex;
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .page-title {
+        font: bold 2rem "Crimson Text", serif;
+        color: #432818;
+    }
+
+    .payment-info-container {
+        display: grid;
+        width: 360px;
+        height: auto;
+        background-color: #ffe6a7;
+        border: 2px solid #432818;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        grid-template-columns: 150px 210px;
+        gap: 10px;
+        padding: 10px;
+        align-items: center;
+    }
+
+    h1 {
+        font: bold 1.5rem "Crimson Text", serif;
+        color: #432818;
+        grid-column: 1 / span 2;
+        text-align: center;
+        padding: 0;
+    }
+
+    .payment-info-container > label {
+        font: 600 1rem "Crimson Text", serif;
+        color: #432818;
+    }
+
+    #name-field {
+        width: 180px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    #payment-method {
+        width: 180px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    #contact-field {
+        width: 180px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    #zip-code {
+        width: 180px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    #email-field {
+        width: 180px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    #province-field {
+        width: 180px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    #city-field {
+        width: 180px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    #address-field {
+        width: 180px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    #confirm-button {
+        width: 150px;
+        height: 50px;
+        border-radius: 50px;
+        font: bold 1rem "Crimson Text", serif;
+        color: #ffe6a7;
+        background-color: #99582a;
+        border: 2px solid #432818;
+        position: relative;
+        left: 30px;
+    }
+
+    #cancel-button {
+        width: 150px;
+        height: 50px;
+        border-radius: 50px;
+        font: bold 1rem "Crimson Text", serif;
+        color: #ffe6a7;
+        background-color: #99582a;
+        border: 2px solid #432818;
+        position: relative;
+        left: 20px;
+    }
+
+    #confirm-button:hover {
+        background-color: #432818;
+        cursor: pointer;
+    }
+
+    #cancel-button:hover {
+        background-color: #432818;
+        cursor: pointer;
+    }
+
+    .products-title {
+        font: bold 1.5rem "Crimson Text", serif;
+        color: #432818;
+    }
+
+    .products-list {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 360px;
+        padding: 10px;
+        justify-content: center;
+        border: 2px solid #432818;
+        border-radius: 20px;
+        gap: 20px;
+    }
+
+    .product {
+        width: 360px;
+        height: 100px;
+        display: flex;
+    }
+
+    .product-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        border: 2px solid #432818;
+    }
+
+    .product-info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .product-name {
+        float: right;
+        font: bold 1.5rem "Crimson Text", serif;
+        color: #432818;
+        margin: 0;
+    }
+
+    .product-price {
+        font: bold 1rem "Crimson Text", serif;
+        color: #432818;
+        margin: 0;
+    }
+    
+    .product-quantity {
+        font: bold 1rem "Crimson Text", serif;
+        color: #432818;
+        margin: 0;
+    }
+
+    #grand-total {
+        color: #432818;
+        font: bold 1.5rem "Crimson Text", serif;
+        text-decoration: underline;
+    }
 
     /*Footer*/
     footer {
@@ -293,18 +480,19 @@ body {
         margin: 0;
         border: none;
         transition: 0.3s;
-      }
-      
-      .open-button:hover {
-        background-color: #432818;
-      }
+    }
+    
+    .open-button:hover {
+      background-color: #432818;
+    }
     
     #logo-button {
         position: relative;
         left: 3px;
         width: 40px;
         height: 40px;
-        background-color: #ddb892;
+        background-color: #ffe6a7;
+        border: 2px solid #432818;
         border-radius: 50%;
     }
 
@@ -392,7 +580,190 @@ body {
     }
 
     /*Checkout*/
-    /* vvv Style here vvv */
+    .container {
+        display: flex;
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .page-title {
+        font: bold 2rem "Crimson Text", serif;
+        color: #432818;
+    }
+
+    .payment-info-container {
+        display: grid;
+        width: 500px;
+        height: auto;
+        background-color: #ffe6a7;
+        border: 2px solid #432818;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        grid-template-columns: 150px 350px;
+        gap: 10px;
+        padding: 10px;
+        align-items: center;
+    }
+
+    h1 {
+        font: bold 1.5rem "Crimson Text", serif;
+        color: #432818;
+        grid-column: 1 / span 2;
+        text-align: center;
+        padding: 0;
+    }
+
+    .payment-info-container > label {
+        font: 600 1rem "Crimson Text", serif;
+        color: #432818;
+    }
+
+    #name-field {
+        width: 250px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    #payment-method {
+        width: 250px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    #contact-field {
+        width: 250px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    #zip-code {
+        width: 250px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    #email-field {
+        width: 250px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    #province-field {
+        width: 250px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    #city-field {
+        width: 250px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    #address-field {
+        width: 250px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    #confirm-button {
+        width: 150px;
+        height: 50px;
+        border-radius: 50px;
+        font: bold 1rem "Crimson Text", serif;
+        color: #ffe6a7;
+        background-color: #99582a;
+        border: 2px solid #432818;
+        position: relative;
+        left: 30%;
+    }
+
+    #cancel-button {
+        width: 150px;
+        height: 50px;
+        border-radius: 50px;
+        font: bold 1rem "Crimson Text", serif;
+        color: #ffe6a7;
+        background-color: #99582a;
+        border: 2px solid #432818;
+        position: relative;
+        left: 50%;
+    }
+
+    #confirm-button:hover {
+        background-color: #432818;
+        cursor: pointer;
+    }
+
+    #cancel-button:hover {
+        background-color: #432818;
+        cursor: pointer;
+    }
+
+    .products-title {
+        font: bold 1.5rem "Crimson Text", serif;
+        color: #432818;
+    }
+
+    .products-list {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 500px;
+        padding: 10px;
+        justify-content: center;
+        border: 2px solid #432818;
+        border-radius: 20px;
+        gap: 20px;
+    }
+
+    .product {
+        width: 360px;
+        height: 100px;
+        display: flex;
+    }
+
+    .product-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        border: 2px solid #432818;
+    }
+
+    .product-info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .product-name {
+        float: right;
+        font: bold 1.5rem "Crimson Text", serif;
+        color: #432818;
+        margin: 0;
+    }
+
+    .product-price {
+        font: bold 1rem "Crimson Text", serif;
+        color: #432818;
+        margin: 0;
+    }
+    
+    .product-quantity {
+        font: bold 1rem "Crimson Text", serif;
+        color: #432818;
+        margin: 0;
+    }
+
+    #grand-total {
+        color: #432818;
+        font: bold 1.5rem "Crimson Text", serif;
+        text-decoration: underline;
+    }
 
     /*Footer*/
     footer {
