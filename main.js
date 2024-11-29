@@ -9,15 +9,15 @@ function closeNav() {
 }
 
 function openExtrasMenu() {
-    document.getElementById("extras-menu").style.display = "flex";
+    document.getElementById("add-ons-menu").style.display = "flex";
 }
 
 function closeExtrasMenu() {
-    document.getElementById("extras-menu").style.display = "none";
+    document.getElementById("add-ons-menu").style.display = "none";
 }
 
 function confirmExtras() {
-    document.getElementById("extras-menu").style.display = "none";
+    document.getElementById("add-ons-menu").style.display = "none";
     alert("Extras successfully added");
 }
 

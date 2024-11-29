@@ -29,28 +29,31 @@
     <main>
         <section class="page-section">
             <div class="container">
-                <h1 class="yourProfile-title">YOUR PROFILE</h1>
+                <h1 class="user-profile-title">User Profile</h1>
                 <img src="/assets/pfppic.png" alt="Profile Picture Icon" id="pfp-icon">
-                <div class="name-container"><p class="username">John Doe</p></div>
-                <div class="info-container">
+                <div class="name-container"><h4 class="username">John Doe</h4></div>
+                <form class="info-container">
                     <h2 class="container-title">Account Details</h2>
-                    <p class="info-container-text">UID:</p>
-                    <p class="info-container-text">Contact No.:</p>
-                    <p class="info-container-text">Email Address:</p>
-                    <p class="info-container-text">Gender:</p>
-                    <p class="info-container-text">Address:</p>
-                    <div class="uid-container">dc696af8-3769-4f1d-bc47-1a211ad75435</div>
-                    <div class="contact-container">09876543212</div>
-                    <div class="email-container">nikocunanan@gmail.com</div>
-                    <div class="gender-container">Male</div>
-                    <div class="address-container">123 Salapungan, Gerona, Tarlac</div>
-                </div>
+                    <label class="info-container-text">UID:</label>
+                    <input type="text" value="dc696af8-3769-4f1d-bc47-1a211ad75435" disabled class="uid-container"></input>
+                    <label class="info-container-text">Contact No.:</label>
+                    <input type="tel" value="09876543212" maxlength="11" class="contact-container"></input>
+                    <label class="info-container-text">Email Address:</label>
+                    <input type="email" value="nikocunanan@gmail.com" class="email-container"></input>
+                    <label class="info-container-text">Gender:</label>
+                    <select class="gender-container">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <label class="info-container-text">Address:</label>
+                    <input type="text" value="123 Salapungan, Gerona, Tarlac" class="address-container"></input>
+                </form>
                 <div class="orders-info-container">
                     <h2 class="container-title">Orders</h2>
-                    <p class="orders-info-container-text">Total Orders:</p>
-                    <p class="orders-info-container-text">Cancelled Orders:</p>
-                    <div class="total-container">1</div>
-                    <div class="cancelled-container">0</div>
+                    <p class="orders-info-container-text">Total Orders: 1</p>
+                    <p class="orders-info-container-text">Cancelled Orders: 0</p>
+                    <p class="orders-info-container-text">Days Joined: 1</p>
                     <button class="open-history-button" onclick="window.location.href='/orders/orders.html'">Order History</button>
                 </div>
             </div>

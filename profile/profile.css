@@ -175,7 +175,7 @@ body {
         padding: 20px 0;
     }
 
-    .yourProfile-title {
+    .user-profile-title {
         font: bold 2rem "Crimson Text", serif;
         color: #432818;
     }
@@ -212,91 +212,44 @@ body {
         width: 360px;
         height: 350px;
         color: #ffe6a7;
-        font: 600 1rem "Crimson Text", serif;
-        padding: 0 10px;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 120px 240px;
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+        padding: 0 5px;
+        gap: 5px;
+        align-items: center;
     }
 
     .container-title {
-        justify-self: center;
-        align-self: center;
+        grid-column: 1 / span 2;
+        text-align: center;
+        margin: 5px;
     }
 
-    .uid-container {
-        background-color: white;
-        height: 25px;
-        width: 260px;
-        position: absolute;
-        bottom: 240px;
-        left: 110px;
-        border-radius: 50px;
-        border: 2px solid #432818;
-        color: #432818;
-        font-size: 0.8rem;
-        display: flex;
-        padding: 0 5px 0 0;
-        align-items: center;
+    .info-container > label {
+        grid-column: 1;
+        font: bold 1rem "Crimson Text", serif;
     }
 
-    .contact-container {
-        background-color: white;
+    .info-container > input {
+        grid-column: 2;
+        width: 225px;
         height: 25px;
-        width: 260px;
-        position: absolute;
-        bottom: 187px;
-        left: 110px;
-        border-radius: 50px;
+        font: 600 0.8rem "Crimson Text", serif;
         border: 2px solid #432818;
-        display: flex;
-        padding: 0 5px 0 0;
-        align-items: center;
+        border-radius: 50px;
+        background-color: #ffe6a7;
         color: #432818;
     }
 
-    .email-container {
-        background-color: white;
-        height: 25px;
-        width: 260px;
-        position: absolute;
-        bottom: 135px;
-        left: 110px;
-        border-radius: 50px;
-        border: 2px solid #432818;
-        display: flex;
-        padding: 0 5px 0 0;
-        align-items: center;
-        color: #432818;
-    }
-
-    .gender-container {
-        background-color: white;
-        height: 25px;
+    .info-container > select {
+        grid-column: 2;
         width: 100px;
-        position: absolute;
-        bottom: 83px;
-        left: 110px;
-        border-radius: 50px;
-        border: 2px solid #432818;
-        display: flex;
-        padding: 0 5px 0 0;
-        align-items: center;
-        color: #432818;
-    }
-
-    .address-container {
-        background-color: white;
         height: 25px;
-        width: 260px;
-        position: absolute;
-        bottom: 32px;
-        left: 110px;
-        border-radius: 50px;
+        font: 600 0.8rem "Crimson Text", serif;
         border: 2px solid #432818;
-        display: flex;
-        padding: 0 5px 0 0;
-        align-items: center;
+        border-radius: 50px;
+        background-color: #ffe6a7;
         color: #432818;
     }
 
@@ -306,7 +259,7 @@ body {
         border-radius: 20px;
         position: relative;
         width: 360px;
-        height: 220px;
+        height: 250px;
         padding: 0 10px;
         margin: 10px 0;
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
@@ -531,9 +484,6 @@ body {
     }
     
     #user-profile {
-        position: absolute;
-        top: 3px;
-        right: 55px;
         width: 40px;
         height: 40px;
         border: 2px solid #ffe6a7;
@@ -560,14 +510,14 @@ body {
     .container {
         display: flex;
         flex-direction: column;
-        width: 360px;
+        width: 480px;
         height: auto;
         align-items: center;
         justify-content: center;
         padding: 20px 0;
     }
 
-    .yourProfile-title {
+    .user-profile-title {
         font: bold 2rem "Crimson Text", serif;
         color: #432818;
     }
@@ -601,94 +551,47 @@ body {
         border: 2px solid #432818;
         border-radius: 20px;
         position: relative;
-        width: 400px;
+        width: 480px;
         height: 350px;
         color: #ffe6a7;
-        font: 600 1rem "Crimson Text", serif;
-        padding: 0 10px;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 120px 360px;
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+        padding: 0 10px;
+        gap: 5px;
+        align-items: center;
     }
 
     .container-title {
-        justify-self: center;
-        align-self: center;
+        grid-column: 1 / span 2;
+        text-align: center;
+        margin: 5px;
     }
 
-    .uid-container {
-        background-color: white;
-        height: 25px;
-        width: 260px;
-        position: absolute;
-        bottom: 240px;
-        left: 110px;
-        border-radius: 50px;
-        border: 2px solid #432818;
-        color: #432818;
-        font-size: 0.8rem;
-        display: flex;
-        padding: 0 5px;
-        align-items: center;
+    .info-container > label {
+        grid-column: 1;
+        font: bold 1rem "Crimson Text", serif;
     }
 
-    .contact-container {
-        background-color: white;
-        height: 25px;
-        width: 260px;
-        position: absolute;
-        bottom: 187px;
-        left: 110px;
-        border-radius: 50px;
+    .info-container > input {
+        grid-column: 2;
+        width: 300px;
+        height: 30px;
+        font: 600 1rem "Crimson Text", serif;
         border: 2px solid #432818;
-        display: flex;
-        padding: 0 5px;
-        align-items: center;
+        border-radius: 50px;
+        background-color: #ffe6a7;
         color: #432818;
     }
 
-    .email-container {
-        background-color: white;
-        height: 25px;
-        width: 260px;
-        position: absolute;
-        bottom: 135px;
-        left: 110px;
-        border-radius: 50px;
-        border: 2px solid #432818;
-        display: flex;
-        padding: 0 5px;
-        align-items: center;
-        color: #432818;
-    }
-
-    .gender-container {
-        background-color: white;
-        height: 25px;
+    .info-container > select {
+        grid-column: 2;
         width: 100px;
-        position: absolute;
-        bottom: 83px;
-        left: 110px;
-        border-radius: 50px;
+        height: 30px;
+        font: 600 1rem "Crimson Text", serif;
         border: 2px solid #432818;
-        display: flex;
-        padding: 0 5px;
-        align-items: center;
-        color: #432818;
-    }
-
-    .address-container {
-        background-color: white;
-        height: 25px;
-        width: 260px;
-        position: absolute;
-        bottom: 32px;
-        left: 110px;
         border-radius: 50px;
-        border: 2px solid #432818;
-        display: flex;
-        padding: 0 5px;
-        align-items: center;
+        background-color: #ffe6a7;
         color: #432818;
     }
 
@@ -697,45 +600,15 @@ body {
         border: 2px solid #432818;
         border-radius: 20px;
         position: relative;
-        width: 400px;
-        height: 220px;
+        width: 480px;
+        height: 250px;
         padding: 0 10px;
         margin: 10px 0;
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
         display: flex;
         flex-direction: column;
         color: #ffe6a7;
-        font: 600 1rem "Crimson Text", serif;
-    }
-
-    .total-container {
-        background-color: white;
-        height: 25px;
-        width: 100px;
-        position: absolute;
-        bottom: 110px;
-        left: 140px;
-        border-radius: 50px;
-        border: 2px solid #432818;
-        display: flex;
-        padding: 0 5px;
-        align-items: center;
-        color: #432818;
-    }
-
-    .cancelled-container {
-        background-color: white;
-        height: 25px;
-        width: 100px;
-        position: absolute;
-        bottom: 58px;
-        left: 140px;
-        border-radius: 50px;
-        border: 2px solid #432818;
-        color: #432818;
-        display: flex;
-        padding: 0 5px;
-        align-items: center;
+        font: bold 1rem "Crimson Text", serif;
     }
 
     .open-history-button {
