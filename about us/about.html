@@ -10,20 +10,20 @@
 </head>
 <body>
     <header class="navigation-bar">
-        <a href="#top"><img src="/assets/logo.webp" alt="Café Pâtissier Logo" id="logo-button"></a>
+        <a href="/home.html"><img src="/assets/logo.webp" alt="Café Pâtissier Logo" id="logo-button"></a>
         <nav class="navigation" id="nav-panel">
             <a href="javascript:void(0)" class="close-button" onclick="closeNav()">&times;</a>
-            <a href="#top">Home</a>
+            <a href="/home.html">Home</a>
             <a href="/shop/shop.html">Shop</a>
-            <a href="#products">Products</a>
-            <a href="#reviews">Reviews</a>
+            <a href="/home.html#products">Products</a>
+            <a href="/home.htmlreviews">Reviews</a>
             <a href="/about us/about.html">About Us</a>
             <a href="/contact/contact.html">Contact</a>
         </nav>
         <div class="menu-container">
             <a href="/cart/cart.html"><i class="fa-solid fa-cart-shopping" id="shopping-cart"></i></a>
-            <button id="signIn-button" href="/userAuth.html">Sign In</button>
-            <button id="signUp-button" href="/userAuth.html">Sign Up</button>
+            <button id="signIn-button" onclick="window.location.href='/signIn.html'">Sign In</button>
+            <button id="signUp-button" onclick="window.location.href='/signUp.html'">Sign Up</button>
             <a href="/profile/profile.html"><img src="/assets/profilePhoto.jpg" alt="Profile Photo" id="user-profile"></a>
             <button class="open-button" onclick="openNav()">&#9776;</button>
         </div>
@@ -31,7 +31,13 @@
     <main>
         <section class="page-section">
             <div class="container">
-                <!--Place content here-->
+                <h1 class="aboutUs-title">ABOUT US</h1>
+                <p class="aboutUs-desc">At Café Pâtissier, we believe that everyday should start with a perfect cup of coffee and a freshly baked treat. Founded with a passion for quality and a love
+                    for community, we bring together the best of artisanal coffee and handcrafted pastries in a warm, welcoming atmosphere. Our coffee is sourced from sustainable
+                    farms, roasted to perfection, and brewed with care, while our pastries are baked daily using wholesome ingredients. Whether you're here to relax, catch up with
+                    friends, or simply grab a quick treat, Café Pâtissier is your cozy corner for delicious moments and lasting memories.
+                </p>
+                <img src="/assets/images/cafe_bg.webp" alt="Café Pâtissier Background" id="cafe-pic-bg">
             </div>
         </section>
     </main>

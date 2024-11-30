@@ -10,13 +10,13 @@
 </head>
 <body>
     <header class="navigation-bar">
-        <a href="#top"><img src="/assets/logo.webp" alt="Café Pâtissier Logo" id="logo-button"></a>
+        <a href="/home.html"><img src="/assets/logo.webp" alt="Café Pâtissier Logo" id="logo-button"></a>
         <nav class="navigation" id="nav-panel">
             <a href="javascript:void(0)" class="close-button" onclick="closeNav()">&times;</a>
-            <a href="#top">Home</a>
+            <a href="/home.html">Home</a>
             <a href="/shop/shop.html">Shop</a>
-            <a href="#products">Products</a>
-            <a href="#reviews">Reviews</a>
+            <a href="/home.html#products">Products</a>
+            <a href="/home.html#reviews">Reviews</a>
             <a href="/about us/about.html">About Us</a>
             <a href="/contact/contact.html">Contact</a>
         </nav>
@@ -29,7 +29,33 @@
     <main>
         <section class="page-section">
             <div class="container">
-                <!--Place content here-->
+                <h1 class="user-profile-title">User Profile</h1>
+                <img src="/assets/pfppic.png" alt="Profile Picture Icon" id="pfp-icon">
+                <div class="name-container"><h4 class="username">John Doe</h4></div>
+                <form class="info-container">
+                    <h2 class="container-title">Account Details</h2>
+                    <label class="info-container-text">UID:</label>
+                    <input type="text" value="dc696af8-3769-4f1d-bc47-1a211ad75435" disabled class="uid-container"></input>
+                    <label class="info-container-text">Contact No.:</label>
+                    <input type="tel" value="09876543212" maxlength="11" class="contact-container"></input>
+                    <label class="info-container-text">Email Address:</label>
+                    <input type="email" value="nikocunanan@gmail.com" class="email-container"></input>
+                    <label class="info-container-text">Gender:</label>
+                    <select class="gender-container">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <label class="info-container-text">Address:</label>
+                    <input type="text" value="123 Salapungan, Gerona, Tarlac" class="address-container"></input>
+                </form>
+                <div class="orders-info-container">
+                    <h2 class="container-title">Orders</h2>
+                    <p class="orders-info-container-text">Total Orders: 1</p>
+                    <p class="orders-info-container-text">Cancelled Orders: 0</p>
+                    <p class="orders-info-container-text">Days Joined: 1</p>
+                    <button class="open-history-button" onclick="window.location.href='/orders/orders.html'">Order History</button>
+                </div>
             </div>
         </section>
     </main>
@@ -47,7 +73,7 @@
             <a target="_blank" href="https://www.x.com"><i class="fa-brands fa-x-twitter" id="twitter"></i></a>
             <a target="_blank" href="https://www.instagram.com"><i class="fa-brands fa-instagram" id="instagram"></i></a>
             <a target="_blank" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
-            <a target="_blank" href="mailto:cafepatissier@gmail.com"><i class="fa-regular fa-envelope" id="email"></i></a>
+            <a target="_blank" href="mailto:cafepatissier@gmail.com"><i class="fa-regular fa-envelope" id="business-email"></i></a>
         </div>
         <p class="copyright">&copy;2024 Café Pâtissier. All rights reserved.</p>
     </footer>

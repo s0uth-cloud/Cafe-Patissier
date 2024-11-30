@@ -69,18 +69,19 @@ body {
         margin: 0;
         border: none;
         transition: 0.3s;
-      }
-      
-      .open-button:hover {
-        background-color: #432818;
-      }
+    }
+    
+    .open-button:hover {
+      background-color: #432818;
+    }
     
     #logo-button {
         position: relative;
         left: 3px;
         width: 40px;
         height: 40px;
-        background-color: #ddb892;
+        background-color: #ffe6a7;
+        border: 2px solid #432818;
         border-radius: 50%;
     }
 
@@ -139,9 +140,6 @@ body {
     
     #user-profile {
         display: none;
-        position: absolute;
-        top: 3px;
-        right: 55px;
         width: 40px;
         height: 40px;
         border: 2px solid #ffe6a7;
@@ -164,7 +162,158 @@ body {
     }
 
     /*Profile*/
-    /* vvv Style here vvv */
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .user-profile-title {
+        font: bold 2rem "Crimson Text", serif;
+        color: #432818;
+    }
+
+    #pfp-icon {
+        width: 75px;
+        height: 75px;
+        position: relative;
+        right: 155px;
+    }
+
+    .name-container {
+        background-color: #99582a;
+        border: 2px solid #432818;
+        border-radius: 50px;
+        position: relative;
+        bottom: 60px;
+        left: 20px;
+        width: 250px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffe6a7;
+        font: 600 1.5rem "Crimson Text", serif;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .info-container {
+        background-color: #99582a;
+        border: 2px solid #432818;
+        border-radius: 20px;
+        position: relative;
+        width: 360px;
+        height: 350px;
+        color: #ffe6a7;
+        display: grid;
+        grid-template-columns: 120px 240px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+        padding: 0 5px;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .container-title {
+        grid-column: 1 / span 2;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .info-container > label {
+        grid-column: 1;
+        font: bold 1rem "Crimson Text", serif;
+    }
+
+    .info-container > input {
+        grid-column: 2;
+        width: 225px;
+        height: 25px;
+        font: 600 0.8rem "Crimson Text", serif;
+        border: 2px solid #432818;
+        border-radius: 50px;
+        background-color: #ffe6a7;
+        color: #432818;
+    }
+
+    .info-container > select {
+        grid-column: 2;
+        width: 100px;
+        height: 25px;
+        font: 600 0.8rem "Crimson Text", serif;
+        border: 2px solid #432818;
+        border-radius: 50px;
+        background-color: #ffe6a7;
+        color: #432818;
+    }
+
+    .orders-info-container {
+        background-color: #99582a;
+        border: 2px solid #432818;
+        border-radius: 20px;
+        position: relative;
+        width: 360px;
+        height: 250px;
+        padding: 0 10px;
+        margin: 10px 0;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        color: #ffe6a7;
+        font: 600 1rem "Crimson Text", serif;
+    }
+
+    .total-container {
+        background-color: white;
+        height: 25px;
+        width: 100px;
+        position: absolute;
+        bottom: 110px;
+        left: 140px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        display: flex;
+        padding: 0 5px;
+        align-items: center;
+        color: #432818;
+    }
+
+    .cancelled-container {
+        background-color: white;
+        height: 25px;
+        width: 100px;
+        position: absolute;
+        bottom: 58px;
+        left: 140px;
+        border-radius: 50px;
+        border: 2px solid #432818;
+        color: #432818;
+        display: flex;
+        padding: 0 5px;
+        align-items: center;
+    }
+
+    .open-history-button {
+        align-self: center;
+        justify-self: center;
+        width: 150px;
+        height: 40px;
+        border: 2px solid #432818;
+        border-radius: 50px;
+        background-color: #432818;
+        color: #ffe6a7;
+        font: bold 1rem "Crimson Text", serif;
+        transition: 0.3s;
+    }
+
+    .open-history-button:hover {
+        cursor: pointer;
+        background-color: #ffe6a7;
+        color: #432818;
+    }
 
     /*Footer*/
     footer {
@@ -293,18 +442,19 @@ body {
         margin: 0;
         border: none;
         transition: 0.3s;
-      }
-      
-      .open-button:hover {
-        background-color: #432818;
-      }
+    }
+    
+    .open-button:hover {
+      background-color: #432818;
+    }
     
     #logo-button {
         position: relative;
         left: 3px;
         width: 40px;
         height: 40px;
-        background-color: #ddb892;
+        background-color: #ffe6a7;
+        border: 2px solid #432818;
         border-radius: 50%;
     }
 
@@ -331,9 +481,6 @@ body {
     }
     
     #user-profile {
-        position: absolute;
-        top: 3px;
-        right: 55px;
         width: 40px;
         height: 40px;
         border: 2px solid #ffe6a7;
@@ -357,7 +504,128 @@ body {
     }
 
     /*Profile*/
-    /* vvv Style here vvv */
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 480px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .user-profile-title {
+        font: bold 2rem "Crimson Text", serif;
+        color: #432818;
+    }
+
+    #pfp-icon {
+        width: 75px;
+        height: 75px;
+        position: relative;
+        right: 155px;
+    }
+
+    .name-container {
+        background-color: #99582a;
+        border: 2px solid #432818;
+        border-radius: 50px;
+        position: relative;
+        bottom: 60px;
+        left: 20px;
+        width: 250px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffe6a7;
+        font: 600 1.5rem "Crimson Text", serif;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .info-container {
+        background-color: #99582a;
+        border: 2px solid #432818;
+        border-radius: 20px;
+        position: relative;
+        width: 480px;
+        height: 350px;
+        color: #ffe6a7;
+        display: grid;
+        grid-template-columns: 120px 360px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+        padding: 0 10px;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .container-title {
+        grid-column: 1 / span 2;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .info-container > label {
+        grid-column: 1;
+        font: bold 1rem "Crimson Text", serif;
+    }
+
+    .info-container > input {
+        grid-column: 2;
+        width: 300px;
+        height: 30px;
+        font: 600 1rem "Crimson Text", serif;
+        border: 2px solid #432818;
+        border-radius: 50px;
+        background-color: #ffe6a7;
+        color: #432818;
+    }
+
+    .info-container > select {
+        grid-column: 2;
+        width: 100px;
+        height: 30px;
+        font: 600 1rem "Crimson Text", serif;
+        border: 2px solid #432818;
+        border-radius: 50px;
+        background-color: #ffe6a7;
+        color: #432818;
+    }
+
+    .orders-info-container {
+        background-color: #99582a;
+        border: 2px solid #432818;
+        border-radius: 20px;
+        position: relative;
+        width: 480px;
+        height: 250px;
+        padding: 0 10px;
+        margin: 10px 0;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        color: #ffe6a7;
+        font: bold 1rem "Crimson Text", serif;
+    }
+
+    .open-history-button {
+        align-self: center;
+        justify-self: center;
+        width: 150px;
+        height: 40px;
+        border: 2px solid #432818;
+        border-radius: 50px;
+        background-color: #432818;
+        color: #ffe6a7;
+        font: bold 1rem "Crimson Text", serif;
+        transition: 0.3s;
+    }
+
+    .open-history-button:hover {
+        cursor: pointer;
+        background-color: #ffe6a7;
+        color: #432818;
+    }
 
     /*Footer*/
     footer {

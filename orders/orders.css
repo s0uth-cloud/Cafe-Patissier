@@ -69,18 +69,19 @@ body {
         margin: 0;
         border: none;
         transition: 0.3s;
-      }
-      
-      .open-button:hover {
-        background-color: #432818;
-      }
+    }
+    
+    .open-button:hover {
+      background-color: #432818;
+    }
     
     #logo-button {
         position: relative;
         left: 3px;
         width: 40px;
         height: 40px;
-        background-color: #ddb892;
+        background-color: #ffe6a7;
+        border: 2px solid #432818;
         border-radius: 50%;
     }
 
@@ -104,44 +105,8 @@ body {
     #shopping-cart:hover {
         color: #432818;
     }
-
-    #signIn-button {
-        width: 90px;
-        height: 30px;
-        border-radius: 50px;
-        border: 2px solid #432818;
-        background-color: #ffe6a7;
-        color: #432818;
-        font: bold 0.8rem "Crimson Text", serif;
-        transition: 0.3s;
-    }
-
-    #signIn-button:hover {
-        background-color: #432818;
-        color: #ffe6a7;
-    }
-
-    #signUp-button {
-        width: 90px;
-        height: 30px;
-        border-radius: 50px;
-        border: 2px solid #432818;
-        background-color: #ffe6a7;
-        color: #432818;
-        font: bold 0.8rem "Crimson Text", serif;
-        transition: 0.3s;
-    }
-
-    #signUp-button:hover {
-        background-color: #432818;
-        color: #ffe6a7;
-    }
     
     #user-profile {
-        display: none;
-        position: absolute;
-        top: 3px;
-        right: 55px;
         width: 40px;
         height: 40px;
         border: 2px solid #ffe6a7;
@@ -161,10 +126,34 @@ body {
         padding: 20px 0;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+        padding: 50px 0;
     }
 
     /*Orders*/
-    /* vvv Style here vvv */
+    .container {
+        display: flex;
+        width: 300px;
+        height: auto;
+        background-color: #99582a;
+        border: 2px solid #432818;
+        padding: 5px;
+        border-radius: 20px;
+        flex-direction: column;
+    }
+
+    h1 {
+        color: #432818;
+    }
+
+    .order-info {
+        color: #ffe6a7;
+    }
+
+    .order-info > h3 {
+        color: #ffe6a7;
+        text-align: center;
+    }
 
     /*Footer*/
     footer {
@@ -293,18 +282,19 @@ body {
         margin: 0;
         border: none;
         transition: 0.3s;
-      }
-      
-      .open-button:hover {
-        background-color: #432818;
-      }
+    }
+    
+    .open-button:hover {
+      background-color: #432818;
+    }
     
     #logo-button {
         position: relative;
         left: 3px;
         width: 40px;
         height: 40px;
-        background-color: #ddb892;
+        background-color: #ffe6a7;
+        border: 2px solid #432818;
         border-radius: 50%;
     }
 
@@ -365,10 +355,6 @@ body {
     }
     
     #user-profile {
-        display: none;
-        position: absolute;
-        top: 3px;
-        right: 55px;
         width: 40px;
         height: 40px;
         border: 2px solid #ffe6a7;
@@ -389,10 +375,36 @@ body {
         padding: 20px 0;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+        padding: 50px 0;
     }
 
     /*Orders*/
-    /* vvv Style here vvv */
+    .container {
+        display: flex;
+        width: 400px;
+        height: auto;
+        background-color: #99582a;
+        border: 2px solid #432818;
+        padding: 0 20px;
+        border-radius: 20px;
+        flex-direction: column;
+    }
+
+    h1 {
+        color: #432818;
+    }
+
+    .order-info {
+        font: 1rem "Crimson Text", serif;
+        color: #ffe6a7;
+    }
+
+    .order-info > h3 {
+        font: bold 1.5rem "Crimson Text", serif;
+        color: #ffe6a7;
+        text-align: center;
+    }
 
     /*Footer*/
     footer {
