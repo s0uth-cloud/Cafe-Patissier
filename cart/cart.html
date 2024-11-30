@@ -13,10 +13,10 @@
         <a href="/home.html"><img src="/assets/logo.webp" alt="Café Pâtissier Logo" id="logo-button"></a>
         <nav class="navigation" id="nav-panel">
             <a href="javascript:void(0)" class="close-button" onclick="closeNav()">&times;</a>
-            <a href="#top">Home</a>
+            <a href="/home.html#top">Home</a>
             <a href="/shop/shop.html">Shop</a>
-            <a href="#products">Products</a>
-            <a href="#reviews">Reviews</a>
+            <a href="/home.html#products">Products</a>
+            <a href="/home.html#reviews">Reviews</a>
             <a href="/about us/about.html">About Us</a>
             <a href="/contact/contact.html">Contact</a>
         </nav>
@@ -37,35 +37,31 @@
                     <img src="/assets/products/cappuccino.webp" alt="Cappuccino" class="product-image">
                     <div class="product-info">
                         <h3 class="product-name">Cappuccino</h3>
-                        <p class="price">Php 49.00</p>
+                        <p class="price">Php 69.00</p>
                         <div class="quantity-selector">
                             <button class="qty-count minus" data-action="minus">-</button>
                             <input type="number" value="1" min="1" max="50" class="quantity-field" />
                             <button class="qty-count plus" data-action="add">+</button>
                         </div>
                     </div>
-                    <button class="open-extras" onclick="openExtrasMenu()">Add extras+</button>
-                    <div class="extras" id="extras-menu">
-                        <h1>Add Extras</h1>
-                        <div class="shot-selector">
-                            <label for="shots">Shots:</label>
-                            <select name="shots" class="shot-count">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                        </div>
-                        <div class="sugar-selector">
-                        <label for="Sugar Level">Sugar Level:</label>
+                    <button class="open-add-ons" onclick="openExtrasMenu()">Add-ons+</button>
+                    <form class="add-ons" id="add-ons-menu">
+                        <h1>Add-ons</h1>
+                        <label class="shots-label">Espresso Shots:</label>
+                        <select name="shots" class="shot-count">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <label class="sugar-label">Sugar Level:</label>
                         <select name="Sugar Level" class="sugar-level">
                             <option value="0">None</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
-                        </div>
-                        <button class="confirm-extras" onclick="confirmExtras()">Confirm</button>
-                        <button class="cancel-extras" onclick="closeExtrasMenu()">Cancel</button>
-                    </div>
+                        <button class="confirm-add-ons" onclick="confirmExtras()">Confirm</button>
+                        <button class="cancel-add-ons" onclick="closeExtrasMenu()">Cancel</button>
+                    </form>
                 </div>
                 <div class="product pastry">
                     <button class="remove-button">&times;</button>
@@ -112,7 +108,7 @@
             <a target="_blank" href="https://www.x.com"><i class="fa-brands fa-x-twitter" id="twitter"></i></a>
             <a target="_blank" href="https://www.instagram.com"><i class="fa-brands fa-instagram" id="instagram"></i></a>
             <a target="_blank" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
-            <a target="_blank" href="mailto:cafepatissier@gmail.com"><i class="fa-regular fa-envelope" id="email"></i></a>
+            <a target="_blank" href="mailto:cafepatissier@gmail.com"><i class="fa-regular fa-envelope" id="business-email"></i></a>
         </div>
         <p class="copyright">&copy;2024 Café Pâtissier. All rights reserved.</p>
     </footer>

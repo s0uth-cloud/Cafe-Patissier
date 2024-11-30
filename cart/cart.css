@@ -80,7 +80,8 @@ body {
         left: 3px;
         width: 40px;
         height: 40px;
-        background-color: #ddb892;
+        background-color: #ffe6a7;
+        border: 2px solid #432818;
         border-radius: 50%;
     }
 
@@ -245,22 +246,23 @@ body {
         font-weight: bold;
     }
 
-    .open-extras {
+    .open-add-ons {
         width: 100px;
         height: 30px;
-        background: none;
-        border: none;
+        background-color: #99582a;
+        border: 2px solid #432818;
         border-radius: 50px;
+        color: #ffe6a7;
         font: 600 1rem "Crimson Text", serif;
         margin: auto;
     }
 
-    .open-extras:hover {
+    .open-add-ons:hover {
         cursor: pointer;
-        border: 2px solid #432818;
+        background-color: #432818;
     }
 
-    .extras {
+    .add-ons {
         display: none;
         width: 300px;
         height: 200px;
@@ -275,50 +277,35 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        align-items: center;
+        padding: 10px;
+        gap: 5px;
+        grid-template-columns: 150px 150px;
+        place-items: center;
         justify-content: center;
-        flex-direction: column;
-        gap: 10px;
     }
 
-    .extras > h1 {
-        margin: 0;
-        padding: 0;
-        position: relative;
-        top: -5px;
+    .add-ons > h1 {
+        margin: 0 auto;
+        grid-column: 1 / span 2;
         font-size: 1.5rem;
     }
     
-    .extras > div > label {
+    .add-ons > label {
         font: 600 1rem "Crimson Text", serif;
-        padding: 0 10px;
-        text-align: right;
+        grid-column: 1;
     }
     
-    .shot-selector {
-        display: flex;
-        width: 150px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .shot-count {
-        width: 50px;
-        height: 20px;
+    .add-ons > select {
+        font: 600 1rem "Crimson Text", serif;
         text-align: center;
+        width: 100px;
+        background-color: #f4f2f3;
+        color: #432818;
+        border: 2px solid #432818;
+        border-radius: 50px;
+        grid-column: 2;
     }
-
-    .sugar-selector {
-        display: flex;
-        width: 175px;
-    }
-
-    .sugar-level{
-        width: 50px;
-        height: 20px;
-    }
-
-    .confirm-extras {
+    .confirm-add-ons {
         width: 100px;
         height: 30px;
         border-radius: 50px;
@@ -326,9 +313,11 @@ body {
         background-color: #99582a;
         color: #ffe6a7;
         font: bold 1rem "Crimson Text", serif;
+        grid-column: 1 / span 2;
+        margin: 0;
     }
 
-    .cancel-extras {
+    .cancel-add-ons {
         width: 100px;
         height: 30px;
         border-radius: 50px;
@@ -336,9 +325,11 @@ body {
         background-color: #ddb892;
         color: #432818;
         font: bold 1rem "Crimson Text", serif;
+        grid-column: 1 / span 2;
+        margin: 0;
     }
 
-    .confirm-extras:hover, .cancel-extras:hover {
+    .confirm-add-ons:hover, .cancel-add-ons:hover {
         cursor: pointer;
         background-color: #432818;
         color: #ffe6a7;
@@ -520,18 +511,19 @@ body {
         margin: 0;
         border: none;
         transition: 0.3s;
-      }
-      
-      .open-button:hover {
-        background-color: #432818;
-      }
+    }
+    
+    .open-button:hover {
+      background-color: #432818;
+    }
     
     #logo-button {
         position: relative;
         left: 3px;
         width: 40px;
         height: 40px;
-        background-color: #ddb892;
+        background-color: #ffe6a7;
+        border: 2px solid #432818;
         border-radius: 50%;
     }
 
@@ -700,7 +692,7 @@ body {
         font-weight: bold;
     }
 
-    .open-extras {
+    .open-add-ons {
         width: 100px;
         height: 30px;
         background-color: #99582a;
@@ -712,16 +704,16 @@ body {
         transition: 0.3s;
     }
 
-    .open-extras:hover {
+    .open-add-ons:hover {
         cursor: pointer;
         background-color: #ffe6a7;
         color: #432818;
     }
 
-    .extras {
+    .add-ons {
         display: none;
-        width: 400px;
-        height: 300px;
+        width: 300px;
+        height: 200px;
         position: fixed;
         z-index: 999;
         background-color: #ffe6a7;
@@ -733,50 +725,35 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        align-items: center;
+        padding: 10px 0;
+        gap: 5px;
+        grid-template-columns: 150px 150px;
+        place-items: center;
         justify-content: center;
-        flex-direction: column;
-        gap: 10px;
     }
 
-    .extras > h1 {
-        margin: 0;
-        padding: 0;
-        position: relative;
-        top: -30px;
+    .add-ons > h1 {
+        margin: 0 auto;
+        grid-column: 1 / span 2;
         font-size: 1.5rem;
     }
     
-    .extras > div > label {
+    .add-ons > label {
         font: 600 1rem "Crimson Text", serif;
-        padding: 0 10px;
-        text-align: right;
+        grid-column: 1;
     }
     
-    .shot-selector {
-        display: flex;
-        width: 150px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .shot-count {
-        width: 50px;
-        height: 20px;
+    .add-ons > select {
+        font: 600 1rem "Crimson Text", serif;
         text-align: center;
+        width: 100px;
+        background-color: #f4f2f3;
+        color: #432818;
+        border: 2px solid #432818;
+        border-radius: 50px;
+        grid-column: 2;
     }
-
-    .sugar-selector {
-        display: flex;
-        width: 175px;
-    }
-
-    .sugar-level{
-        width: 50px;
-        height: 20px;
-    }
-
-    .confirm-extras {
+    .confirm-add-ons {
         width: 100px;
         height: 30px;
         border-radius: 50px;
@@ -784,10 +761,11 @@ body {
         background-color: #99582a;
         color: #ffe6a7;
         font: bold 1rem "Crimson Text", serif;
-        margin-top: 30px;
+        grid-column: 1 / span 2;
+        margin: 0;
     }
 
-    .cancel-extras {
+    .cancel-add-ons {
         width: 100px;
         height: 30px;
         border-radius: 50px;
@@ -795,9 +773,11 @@ body {
         background-color: #ddb892;
         color: #432818;
         font: bold 1rem "Crimson Text", serif;
+        grid-column: 1 / span 2;
+        margin: 0;
     }
 
-    .confirm-extras:hover, .cancel-extras:hover {
+    .confirm-add-ons:hover, .cancel-add-ons:hover {
         cursor: pointer;
         background-color: #432818;
         color: #ffe6a7;

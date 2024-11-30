@@ -140,9 +140,6 @@ body {
     
     #user-profile {
         display: none;
-        position: absolute;
-        top: 3px;
-        right: 55px;
         width: 40px;
         height: 40px;
         border: 2px solid #ffe6a7;
@@ -561,9 +558,6 @@ body {
     
     #user-profile {
         display: none;
-        position: absolute;
-        top: 3px;
-        right: 55px;
         width: 40px;
         height: 40px;
         border: 2px solid #ffe6a7;

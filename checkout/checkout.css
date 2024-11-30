@@ -142,9 +142,6 @@ body {
     
     #user-profile {
         display: none;
-        position: absolute;
-        top: 3px;
-        right: 55px;
         width: 40px;
         height: 40px;
         border: 2px solid #ffe6a7;
@@ -183,13 +180,13 @@ body {
 
     .payment-info-container {
         display: grid;
-        width: 360px;
+        width: 340px;
         height: auto;
         background-color: #ffe6a7;
         border: 2px solid #432818;
         border-radius: 20px;
         margin-bottom: 30px;
-        grid-template-columns: 150px 210px;
+        grid-template-columns: 140px 200px;
         gap: 10px;
         padding: 10px;
         align-items: center;
@@ -277,7 +274,7 @@ body {
         background-color: #99582a;
         border: 2px solid #432818;
         position: relative;
-        left: 20px;
+        left: 10px;
     }
 
     #confirm-button:hover {
@@ -299,7 +296,7 @@ body {
         display: flex;
         flex-direction: column;
         height: auto;
-        width: 360px;
+        width: 340px;
         padding: 10px;
         justify-content: center;
         border: 2px solid #432818;
@@ -554,9 +551,6 @@ body {
     
     #user-profile {
         display: none;
-        position: absolute;
-        top: 3px;
-        right: 55px;
         width: 40px;
         height: 40px;
         border: 2px solid #ffe6a7;
