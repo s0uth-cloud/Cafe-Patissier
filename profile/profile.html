@@ -7,47 +7,33 @@
     <link rel="stylesheet" href="profile.css">
     <script src="https://kit.fontawesome.com/45ea7a692b.js" crossorigin="anonymous"></script>
     <script src="/main.js" type="text/javascript"></script>
+    <script src="/profile.js"></script>
 </head>
 <body>
-    <header class="navigation-bar">
-        <a href="/home.html"><img src="/assets/logo.webp" alt="Café Pâtissier Logo" id="logo-button"></a>
-        <nav class="navigation" id="nav-panel">
-            <a href="javascript:void(0)" class="close-button" onclick="closeNav()">&times;</a>
-            <a href="/home.html">Home</a>
-            <a href="/shop/shop.html">Shop</a>
-            <a href="/home.html#products">Products</a>
-            <a href="/home.html#reviews">Reviews</a>
-            <a href="/about us/about.html">About Us</a>
-            <a href="/contact/contact.html">Contact</a>
-        </nav>
-        <div class="menu-container">
-            <a href="/cart/cart.html"><i class="fa-solid fa-cart-shopping" id="shopping-cart"></i></a>
-            <a href="/profile/profile.html"><img src="/assets/profilePhoto.jpg" alt="Profile Photo" id="user-profile"></a>
-            <button class="open-button" onclick="openNav()">&#9776;</button>
-        </div>
-    </header>
+    <div id="header-container"></div>
     <main>
         <section class="page-section">
             <div class="container">
                 <h1 class="user-profile-title">User Profile</h1>
-                <img src="/assets/pfppic.png" alt="Profile Picture Icon" id="pfp-icon">
-                <div class="name-container"><h4 class="username">John Doe</h4></div>
+                <img src="/assets/profilePhoto.jpg" alt="Profile Picture Icon" id="pfp-icon">
+                <div class="name-container"><h4 class="username" id="profile-username"></h4></div>
                 <form class="info-container">
                     <h2 class="container-title">Account Details</h2>
                     <label class="info-container-text">UID:</label>
                     <input type="text" value="dc696af8-3769-4f1d-bc47-1a211ad75435" disabled class="uid-container"></input>
                     <label class="info-container-text">Contact No.:</label>
-                    <input type="tel" value="09876543212" maxlength="11" class="contact-container"></input>
+                    <input type="tel" placeholder="Phone Number" maxlength="11" class="contact-container"></input>
                     <label class="info-container-text">Email Address:</label>
-                    <input type="email" value="nikocunanan@gmail.com" class="email-container"></input>
+                    <input type="email" disabled class="email-container" id="profile-email"></input>
                     <label class="info-container-text">Gender:</label>
                     <select class="gender-container">
+                        <option value="None">None</option>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
                         <option value="Other">Other</option>
                     </select>
                     <label class="info-container-text">Address:</label>
-                    <input type="text" value="123 Salapungan, Gerona, Tarlac" class="address-container"></input>
+                    <input type="text" placeholder="Full Address" class="address-container"></input>
                 </form>
                 <div class="orders-info-container">
                     <h2 class="container-title">Orders</h2>

@@ -48,6 +48,26 @@ body {
         background-color: #432818;
     }
 
+    .navigation > #logOut-button {
+        width: 125px;
+        height: 40px;
+        background-color: #432818;
+        border: 2px solid #432818;
+        border-radius: 50px;
+        color: #ffe6a7;
+        font: 600 1rem "Crimson Text", serif;
+        position: relative;
+        top: 75px;
+        left: 25%;
+        transition: 0.3s;
+    }
+
+    .navigation > #logOut-button:hover {
+        cursor: pointer;
+        background-color: #ddb892;
+        color: #432818;
+    }
+
     .navigation > .close-button {
         position: absolute;
         top: 0;
@@ -331,6 +351,26 @@ body {
     .navigation > a:hover {
         color: #ffedd8;
         background-color: #432818;
+    }
+
+    .navigation > #logOut-button {
+        width: 125px;
+        height: 40px;
+        background-color: #432818;
+        border: 2px solid #432818;
+        border-radius: 50px;
+        color: #ffe6a7;
+        font: 600 1rem "Crimson Text", serif;
+        position: relative;
+        top: 75px;
+        left: 25%;
+        transition: 0.3s;
+    }
+
+    .navigation > #logOut-button:hover {
+        cursor: pointer;
+        background-color: #ddb892;
+        color: #432818;
     }
 
     .navigation > .close-button {

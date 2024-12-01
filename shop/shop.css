@@ -48,6 +48,26 @@ body {
         background-color: #432818;
     }
 
+    .navigation > #logOut-button {
+        width: 125px;
+        height: 40px;
+        background-color: #432818;
+        border: 2px solid #432818;
+        border-radius: 50px;
+        color: #ffe6a7;
+        font: 600 1rem "Crimson Text", serif;
+        position: relative;
+        top: 75px;
+        left: 25%;
+        transition: 0.3s;
+    }
+
+    .navigation > #logOut-button:hover {
+        cursor: pointer;
+        background-color: #ddb892;
+        color: #432818;
+    }
+
     .navigation > .close-button {
         position: absolute;
         top: 0;
@@ -140,9 +160,6 @@ body {
     
     #user-profile {
         display: none;
-        position: absolute;
-        top: 3px;
-        right: 55px;
         width: 40px;
         height: 40px;
         border: 2px solid #ffe6a7;
@@ -233,6 +250,37 @@ body {
         cursor: pointer;
         background-color: #ffe6a7;
         color: #432818;
+    }
+
+    .cart-popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: #ffe6a7;
+        color: #432818;
+        border: 2px solid #432818;
+        border-radius: 20px;
+        font: 600 1rem "Crimson Text", serif;
+        text-align: center;
+    }
+
+    .cart-popup > button {
+        width: 100px;
+        height: 30px;
+        background-color: #99582a;
+        border: 2px solid #432818;
+        color: #ffe6a7;
+        font: 600 1rem "Crimson Text", serif;
+        border-radius: 50px;
+        transition: 0.3s;
+    }
+
+    .cart-popup > button:hover {
+        cursor: pointer;
+        background-color: #432818;
     }
 
     /*Footer*/
@@ -341,6 +389,26 @@ body {
         background-color: #432818;
     }
 
+    .navigation > #logOut-button {
+        width: 125px;
+        height: 40px;
+        background-color: #432818;
+        border: 2px solid #432818;
+        border-radius: 50px;
+        color: #ffe6a7;
+        font: 600 1rem "Crimson Text", serif;
+        position: relative;
+        top: 75px;
+        left: 25%;
+        transition: 0.3s;
+    }
+
+    .navigation > #logOut-button:hover {
+        cursor: pointer;
+        background-color: #ddb892;
+        color: #432818;
+    }
+
     .navigation > .close-button {
         position: absolute;
         top: 0;
@@ -436,9 +504,6 @@ body {
     
     #user-profile {
         display: none;
-        position: absolute;
-        top: 3px;
-        right: 55px;
         width: 40px;
         height: 40px;
         border: 2px solid #ffe6a7;
@@ -531,6 +596,37 @@ body {
         cursor: pointer;
         background-color: #ffe6a7;
         color: #432818;
+    }
+
+    .cart-popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: #ffe6a7;
+        color: #432818;
+        border: 2px solid #432818;
+        border-radius: 20px;
+        font: 600 1rem "Crimson Text", serif;
+        text-align: center;
+    }
+
+    .cart-popup > button {
+        width: 100px;
+        height: 30px;
+        background-color: #99582a;
+        border: 2px solid #432818;
+        color: #ffe6a7;
+        font: 600 1rem "Crimson Text", serif;
+        border-radius: 50px;
+        transition: 0.3s;
+    }
+
+    .cart-popup > button:hover {
+        cursor: pointer;
+        background-color: #432818;
     }
 
     /*Footer*/
