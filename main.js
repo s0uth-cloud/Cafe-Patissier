@@ -72,108 +72,121 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /* Sign In/Sign Up */
 document.addEventListener("DOMContentLoaded", () => {
-    const signInBtn = document.getElementById("signIn-button");
-    const signUpBtn = document.getElementById("signUp-button");
-    const profileBtn = document.getElementById("user-profile");
-    const signInForm = document.getElementById("signIn-form");
-    const signUpForm = document.getElementById("signUp-form");
-
-    const signInSubmit = document.getElementById("signIn-submit");
-    const signUpSubmit = document.getElementById("signUp-submit");
-
-    // Check if the user is logged in
-    function checkLoginStatus() {
-        const loggedInUser = localStorage.getItem("loggedInUser");
-        if (loggedInUser) {
-            // User is logged in
-            signInBtn.style.display = "none";
-            signUpBtn.style.display = "none";
-            profileBtn.style.display = "block";
-        } else {
-            // User is not logged in
-            signInBtn.style.display = "block";
-            signUpBtn.style.display = "block";
-            profileBtn.style.display = "none";
-        }
-    }
-
-    // Toggle forms
-    function toggleForm(formToShow) {
-        signInForm.classList.remove("active");
-        signUpForm.classList.remove("active");
-        if (formToShow) formToShow.classList.add("active");
-    }
-
-    // Sign In functionality
-    signInSubmit.addEventListener("click", () => {
-        const username = document.getElementById("signIn-email").value.trim();
-        const password = document.getElementById("signIn-password").value.trim();
-
-        const users = JSON.parse(localStorage.getItem("users")) || {};
-        if (users[username] && users[username] === password) {
-            localStorage.setItem("loggedInUser", username);
-            alert("Sign In Successful!");
-            toggleForm();
-            checkLoginStatus();
-            window.location.href = "/profile/profile.html"
-        } else {
-            alert("Invalid username or password.");
-        }
-    });
-
-    // Sign Up functionality
-    fetch("/menu.html")
+    fetch("/header.html")
         .then(response => response.text())
         .then(html => {
-            document.getElementById("menu-buttons").innerHTML = html;
+            document.getElementById("header-container").innerHTML = html;
+
+            // Once the header is injected, initialize the auth system
             const script = document.createElement("script");
             script.src = "/main.js";
+            script.onload = initializeAuth; // Call initializeAuth after the script loads
             document.body.appendChild(script);
         });
 
-    signUpSubmit.addEventListener("click", () => {
-        const username = document.getElementById("signUp-email").value.trim();
-        const password = document.getElementById("signUp-password").value.trim();
+    function initializeAuth() {
+        const signInBtn = document.getElementById("signIn-button");
+        const signUpBtn = document.getElementById("signUp-button");
+        const profileBtn = document.getElementById("user-profile");
+        const logOutBtn = document.getElementById("logOut-button");
 
-        if (!username || !password) {
-            alert("Please enter both username and password.");
-            return;
+        // Form Elements (if available on the page)
+        const signInForm = document.getElementById("signIn-form");
+        const signUpForm = document.getElementById("signUp-form");
+
+        const signInSubmit = document.getElementById("signIn-submit");
+        const signUpSubmit = document.getElementById("signUp-submit");
+
+        // Check if the user is logged in
+        function checkLoginStatus() {
+            const loggedInUser = localStorage.getItem("loggedInUser");
+            if (loggedInUser) {
+                // User is logged in
+                signInBtn.style.display = "none";
+                signUpBtn.style.display = "none";
+                profileBtn.style.display = "block";
+                logOutBtn.style.display = "block";
+            } else {
+                // User is not logged in
+                signInBtn.style.display = "block";
+                signUpBtn.style.display = "block";
+                profileBtn.style.display = "none";
+                logOutBtn.style.display = "none";
+            }
         }
 
-        const users = JSON.parse(localStorage.getItem("users")) || {};
+        // Redirect to Sign In page
+        signInBtn.addEventListener("click", () => {
+            window.location.href = "/signIn.html"; // Correct path to the Sign In page
+        });
 
-        if (users[username]) {
-            alert("Email already registered.");
-        } else {
-            users[username] = password;
-            localStorage.setItem("users", JSON.stringify(users));
-            alert("Sign Up Successful! You can now sign in.");
-            toggleForm(signInForm);
-            window.location.href = "/profile/profile.html"
+        // Redirect to Sign Up page
+        signUpBtn.addEventListener("click", () => {
+            window.location.href = "/signUp.html"; // Correct path to the Sign Up page
+        });
+
+        // Profile Button functionality
+        profileBtn.addEventListener("click", () => {
+            const loggedInUser = localStorage.getItem("loggedInUser");
+            if (loggedInUser) {
+                window.location.href = "/profile/profile.html"; // Correct path to the Profile page
+            }
+        });
+
+        // Log Out functionality
+        logOutBtn.addEventListener("click", () => {
+            localStorage.removeItem("loggedInUser"); // Clear the logged-in user
+            alert("You have successfully logged out.");
+            checkLoginStatus(); // Update button visibility
+            window.location.href = "/home.html"; // Redirect to the home page (or a landing page)
+        });
+
+        // Sign In functionality
+        if (signInSubmit) {
+            signInSubmit.addEventListener("click", (event) => {
+                event.preventDefault(); // Prevent default form submission
+
+                const username = document.getElementById("signIn-email").value.trim();
+                const password = document.getElementById("signIn-password").value.trim();
+
+                const users = JSON.parse(localStorage.getItem("users")) || {};
+                if (users[username] && users[username] === password) {
+                    localStorage.setItem("loggedInUser", username);
+                    alert("Sign In Successful!");
+                    window.location.href = "/profile/profile.html"; // Redirect after sign in
+                } else {
+                    alert("Invalid username or password.");
+                }
+            });
         }
-    });
 
-    // Show Sign In form
-    signInBtn.addEventListener("click", () => {
-        window.location.href = "/signIn.html";
-        toggleForm(signInForm);
-    });
+        // Sign Up functionality
+        if (signUpSubmit) {
+            signUpSubmit.addEventListener("click", (event) => {
+                event.preventDefault(); // Prevent default form submission
 
-    // Show Sign Up form
-    signUpBtn.addEventListener("click", () => {
-        window.location.href = "/signIn.html";
-        toggleForm(signUpForm);
-    });
+                const username = document.getElementById("signUp-email").value.trim();
+                const password = document.getElementById("signUp-password").value.trim();
 
-    // Profile Button functionality
-    profileBtn.addEventListener("click", () => {
-        const loggedInUser = localStorage.getItem("loggedInUser");
-        if (loggedInUser) {
-            alert(`Welcome to your profile, ${loggedInUser}!`);
-            window.location.href = "/profile/profile.html";
+                if (!username || !password) {
+                    alert("Please enter both username and password.");
+                    return;
+                }
+
+                const users = JSON.parse(localStorage.getItem("users")) || {};
+
+                if (users[username]) {
+                    alert("Email already registered.");
+                } else {
+                    users[username] = password;
+                    localStorage.setItem("users", JSON.stringify(users));
+                    alert("Sign Up Successful! You can now sign in.");
+                    window.location.href = "/signIn.html"; // Redirect to sign in page
+                }
+            });
         }
-    });
 
-    // Initialize login status
-    checkLoginStatus();
+        // Initialize login status
+        checkLoginStatus();
+    }
 });
