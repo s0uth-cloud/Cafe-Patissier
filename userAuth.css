@@ -165,7 +165,7 @@ body {
 
     /*Sign In/Sign Up*/
     .container {
-        display: none;
+        display: flex;
         flex-direction: column;
         width: 300px;
         height: 400px;
@@ -177,10 +177,6 @@ body {
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
         text-align: center;
         gap: 10px;
-    }
-
-    .container.active {
-        display: flex;
     }
 
     input {
@@ -445,10 +441,7 @@ body {
         color: #432818;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
         text-align: center;
-    }
-
-    .container.active {
-        display: flex;
+        gap: 15px;
     }
 
     input {
