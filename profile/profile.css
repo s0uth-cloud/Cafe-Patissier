@@ -202,6 +202,8 @@ body {
         height: 75px;
         position: relative;
         right: 155px;
+        border: 2px solid #432818;
+        border-radius: 999px;
     }
 
     .name-container {
@@ -564,6 +566,8 @@ body {
         height: 75px;
         position: relative;
         right: 155px;
+        border: 2px solid #432818;
+        border-radius: 999px;
     }
 
     .name-container {

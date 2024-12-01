@@ -64,11 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-/* Contact Us Submit Button Message */
-
-
-/* Checkout Interactions */
-
 
 /* Sign In/Sign Up */
 document.addEventListener("DOMContentLoaded", () => {
@@ -144,18 +139,19 @@ document.addEventListener("DOMContentLoaded", () => {
         // Sign In functionality
         if (signInSubmit) {
             signInSubmit.addEventListener("click", (event) => {
-                event.preventDefault(); // Prevent default form submission
-
-                const username = document.getElementById("signIn-email").value.trim();
+                event.preventDefault(); // Prevent form submission
+    
+                const email = document.getElementById("signIn-email").value.trim();
                 const password = document.getElementById("signIn-password").value.trim();
-
+    
                 const users = JSON.parse(localStorage.getItem("users")) || {};
-                if (users[username] && users[username] === password) {
-                    localStorage.setItem("loggedInUser", username);
+    
+                if (users[email] && users[email].password === password) {
+                    localStorage.setItem("loggedInUser", email); // Store the logged-in user's email
                     alert("Sign In Successful!");
-                    window.location.href = "/profile/profile.html"; // Redirect after sign in
+                    window.location.href = "/profile/profile.html"; // Redirect to profile page
                 } else {
-                    alert("Invalid username or password.");
+                    alert("Invalid email or password.");
                 }
             });
         }
@@ -163,25 +159,31 @@ document.addEventListener("DOMContentLoaded", () => {
         // Sign Up functionality
         if (signUpSubmit) {
             signUpSubmit.addEventListener("click", (event) => {
-                event.preventDefault(); // Prevent default form submission
-
-                const username = document.getElementById("signUp-email").value.trim();
+                event.preventDefault(); // Prevent form submission
+    
+                const username = document.getElementById("signUp-username").value.trim();
+                const email = document.getElementById("signUp-email").value.trim();
                 const password = document.getElementById("signUp-password").value.trim();
-
-                if (!username || !password) {
-                    alert("Please enter both username and password.");
+    
+                if (!username || !email || !password) {
+                    alert("Please fill out all fields.");
                     return;
                 }
-
+    
                 const users = JSON.parse(localStorage.getItem("users")) || {};
-
-                if (users[username]) {
-                    alert("Email already registered.");
+    
+                if (users[email]) {
+                    alert("Email is already registered.");
                 } else {
-                    users[username] = password;
+                    // Save user information in localStorage (including username and email)
+                    users[email] = {
+                        username: username,
+                        password: password,
+                    };
                     localStorage.setItem("users", JSON.stringify(users));
+    
                     alert("Sign Up Successful! You can now sign in.");
-                    window.location.href = "/signIn.html"; // Redirect to sign in page
+                    window.location.href = "/signIn.html"; // Redirect to sign-in page
                 }
             });
         }
@@ -190,3 +192,4 @@ document.addEventListener("DOMContentLoaded", () => {
         checkLoginStatus();
     }
 });
+
