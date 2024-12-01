@@ -193,3 +193,30 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+/* Add To Cart Interaction */
+document.addEventListener("DOMContentLoaded", () => {
+    // Select all "Add to Cart" buttons
+    const addToCartBtns = document.querySelectorAll(".addToCart-button");
+
+    // Add event listener for each button
+    addToCartBtns.forEach(btn => {
+        btn.addEventListener("click", (event) => {
+            const productName = event.target.dataset.product;  // Get product name from button's data attribute
+            showConfirmationPopup(productName);  // Show confirmation message
+        });
+    });
+
+    // Function to show the confirmation pop-up
+    function showConfirmationPopup(productName) {
+        const popup = document.getElementById("cart-popup");
+        const message = document.getElementById("confirmation-message");
+        message.textContent = `${productName} has been added to your cart!`;  // Set the confirmation message
+        popup.style.display = "block";  // Show the pop-up
+    }
+
+    // Function to close the pop-up
+    window.closePopup = function() {
+        const popup = document.getElementById("cart-popup");
+        popup.style.display = "none";  // Hide the pop-up
+    };
+});
