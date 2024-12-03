@@ -200,8 +200,6 @@ body {
     #pfp-icon {
         width: 75px;
         height: 75px;
-        position: relative;
-        right: 155px;
         border: 2px solid #432818;
         border-radius: 999px;
     }
@@ -210,16 +208,13 @@ body {
         background-color: #99582a;
         border: 2px solid #432818;
         border-radius: 50px;
-        position: relative;
-        bottom: 60px;
-        left: 20px;
         width: 250px;
         height: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
         color: #ffe6a7;
-        font: 600 1.5rem "Crimson Text", serif;
+        font: 600 1.25rem "Crimson Text", serif;
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
     }
 
